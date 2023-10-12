@@ -3,18 +3,58 @@
   <head>
     <meta charset='utf-8'>
     <title>Cartel Automotivo</title>
-    <style type='text/css'>
-      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
       body {
         font-family: 'Cormorant Garamond', serif;
-        color: white;
+				color: white !important;
         background-color: #4E5358;
-      }
-    </style>
+				width: 100vw;
+				height: 100vh;
+				text-align: center; 
+				margin: 0; 
+				padding: 0; 
+				font-family: Courier New; 
+				font-size: 1.1rem; 
+				font-style: normal;
+				line-height: 1.5rem;
+				background: url(
+					data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFUlEQVQYV2O8ffu2LwMDAwMjiAABAC1zAuFbE/raAAAAAElFTkSuQmCC
+					);
+				text-rendering: geometricPrecision;
+				white-space: pre-line;
+				overflow: hidden;
+				box-shadow: 0px 0px 100px rgba(0,0,0,0.1) inset;
+			}
+			.words {
+				display: block; 
+				position: absolute; 
+				top: 50%; left: 50%;
+  				transform: translate(-50%,-50%) rotateZ(0deg);
+				cursor: default;
+				background-color: transparent;
+			}
+			.words a {
+				display: inline-block;
+				text-decoration: none; 
+				border-top: 0.05rem solid LightGray;
+				border-bottom: 0.05rem solid LightGray;
+				padding-bottom: 0.0rem;
+				color: black;
+				background-color: transparent;
+			}		
+			.words a:hover {
+				border-top: 0.05rem solid #78D2FF;
+				border-bottom: 0.05rem solid #2C9739;
+				position: relative;
+			}
+			.words img {
+				max-width: 90vw !important;
+			}
+  </style>
   </head>
 
   <body>
-    <h2>ETA soon...</h2>
-      <span><img src="cartel_auto_1.png" width="440px"></span>
+      <div class="words"><img src="cartel_auto_1.png" width="440px"><br><h2>ETA soon...</h2></div>
   </body>
 </html>
