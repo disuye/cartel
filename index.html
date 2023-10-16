@@ -4,26 +4,32 @@
     <meta charset='utf-8'>
     <title>Cartel Automotivo</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');      			
+	/*  Logo Colors
+		green: 	#0F8F36
+		yellow: #F4AA13
+		red: 	#D92A2F
+	*/
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');     			
 			body {
-        			font-family: 'Old Standard TT', serif;
+        		font-family: 'Noto Serif', serif;
 				color: white !important;
-        			background-color: #4E5358;
+        		background-color: #4E5358;
 				width: 100vw;
 				height: 100vh;
 				text-align: center; 
 				margin: 0; 
 				padding: 0; 
-				font-size: 1.2rem; 
+				font-size: 1.4rem; 
 				font-style: normal;
-				font-weight: 500;
-				line-height: 1.5rem;
+				font-weight: 300;
+				line-height: 1.8rem;
+				word-spacing: -0.08rem;
 				text-rendering: geometricPrecision;
 				white-space: pre-line;
 				overflow: hidden;
-				box-shadow: 0px 0px 100px rgba(0,0,0,0.1) inset;
+				box-shadow: 0px 0px 100px rgba(0,0,0,1) inset;
 			}
-			.words {
+			.centerblock {
 				display: block; 
 				position: absolute; 
 				top: 50%; left: 50%;
@@ -31,25 +37,35 @@
 				cursor: default;
 				background-color: transparent;
 			}
-			.words a {
+			.centerblock a {
 				display: inline-block;
 				text-decoration: none; 
-				border-top: 0.05rem solid LightGray;
-				border-bottom: 0.05rem solid LightGray;
-				padding-bottom: 0.0rem;
-				color: black;
-				background-color: transparent;
+				padding: 0.0rem 0.4em;
+				color: white;
+				background-color: rgba(0, 0, 0, 0.15);
 			}		
-			.words a:hover {
+			.centerblock a:hover {
 				position: relative;
+				background-color: rgba(0, 0, 0, 0.05);
 			}
-			.words img {
-				max-width: 90vw !important;
+			.centerblock .logo {
+				width: 50vw;
+				max-width: 440px !important;
+			}
+			.words {
+				font-size: 0.9rem;
+				line-height: 1.5rem;
+				text-align: justify;
+				width: 50vw;
+				max-width: 440px;
 			}
   </style>
   </head>
 
   <body>
-      <div class="words"><img src="/img/cartel_auto_logo-w.png" width="440px"><br><p>Arriving soon...</p></div>
-  </body>
+	  <div class="centerblock">
+		<img class="logo" src="/img/cartel_auto_logo-w.png"><br>Arriving soon &hellip; <a href="http://t.me/dandisuye">Questions?</a>
+	  		<div class="words"></div>
+	  </div>
+	</body>
 </html>
