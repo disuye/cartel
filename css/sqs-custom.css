@@ -13,8 +13,21 @@ h1:not(.ProductList-title, .ProductItem-details-title) {
     padding-top: 10vw;
 }
 
-h2, .BlogList-item-title {
-  font-family: calder-dark !important; 
+.ProductItem-details p {
+  font-family: rubik !important;
+  font-size: 18px !important;
+  line-height: 1.4rem !important;
+  font-weight: 300 !important;
+  color: hsla(0%,0%,11%,0.7);
+}
+
+h2, .BlogList-item-title, .ProductItem-details-title {
+  font-family: calder-dark !important;
+  font-size: 1.8rem !important;
+}
+
+.Header-tagline {
+  display: none;
 }
 
 .BlogItem-title {
