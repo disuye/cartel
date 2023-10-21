@@ -1,0 +1,66 @@
+h1, 
+not(.ProductList-title) {
+	font-size: 6vw;
+	word-break: keep-all !important;
+    word-break: unset;
+	word-wrap: unset;
+	overflow-wrap: unset;
+	-webkit-hyphens: unset;
+	-moz-hyphens: unset;
+	-ms-hyphens: unset;
+	hyphens: unset;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1vw;
+    padding-top: 10vw;
+}
+
+h2,
+.BlogList-item-title {
+  font-family: calder-dark !important; 
+}
+
+.BlogItem-title {
+  font-family: calder-dark;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6vw;
+  letter-spacing: -.04em;
+  line-height: 1em;
+  text-transform: none;
+  color: white !important;
+  text-align: left !important;
+  margin: 0.0rem 25% 0.0rem 25%;
+  width: auto !important;
+}
+
+h3 {
+  margin-bottom: 2.0rem;
+  margin-top: 2.0rem
+}
+
+.Mobile-bar--top {
+	box-shadow: 0.0rem 0.0rem 1.0rem rgba(0,0,0,0.2);
+}
+
+p a:hover {
+  color: #FF9C23 !important;
+}
+
+p a {
+  color: rgba(0,0,0,1.0) !important;
+  text-decoration: none !important;
+  border: none !important;
+}
+
+.sqs-cookie-banner-v2.LIGHT {
+  background-color: rgba(255,255,0,0.9) !important;
+  /* height: 2.2rem; */
+}
+
+.sqs-block-content .sqs-intrinsic {
+  padding-bottom: 0px !important;
+}
+
+.sqs-block .spacer-block .sqs-block-spacer {
+	display: none !important;
+}
