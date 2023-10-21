@@ -1,5 +1,4 @@
-h1, 
-not(.ProductList-title) {
+h1:not(.ProductList-title, .ProductItem-details-title) {
 	font-size: 6vw;
 	word-break: keep-all !important;
     word-break: unset;
@@ -14,8 +13,7 @@ not(.ProductList-title) {
     padding-top: 10vw;
 }
 
-h2,
-.BlogList-item-title {
+h2, .BlogList-item-title {
   font-family: calder-dark !important; 
 }
 
