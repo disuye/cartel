@@ -86,6 +86,14 @@ p a {
     padding-top: 0px !important;
 }
 
+.tweak-footer-layout-columns .Footer--mid.Footer--compact .Footer-blocks--middle {
+  display: none;
+}
+
+[id^=banner] {
+  padding-top: 50vh !important;
+}
+
 .Footer {
   border-top: 6px solid black;
   background: url('https://images.squarespace-cdn.com/content/v1/652b0f65aeecd32f99b15cac/e2b993c0-89e6-40ad-a801-74da42b75aa6/cartel_auto_logo2b.png') center no-repeat;
