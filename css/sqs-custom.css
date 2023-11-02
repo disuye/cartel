@@ -1,16 +1,16 @@
 h1:not(.ProductList-title, .ProductItem-details-title) {
-  font-size: 6vw;
-  word-break: keep-all !important;
-  word-break: unset;
-  word-wrap: unset;
-  overflow-wrap: unset;
-  -webkit-hyphens: unset;
-  -moz-hyphens: unset;
-  -ms-hyphens: unset;
-  hyphens: unset;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 1vw;
-  padding-top: 10vw;
+	font-size: 4vw;
+	word-break: keep-all !important;
+    word-break: unset;
+	word-wrap: unset;
+	overflow-wrap: unset;
+	-webkit-hyphens: unset;
+	-moz-hyphens: unset;
+	-ms-hyphens: unset;
+	hyphens: unset;
+    background: rgba(0,0,0, 0.9);
+    padding: 1.5vw;
+    color: rgba(255, 255, 255, 1.0) !important;
 }
 
 .ProductItem-details p {
@@ -18,12 +18,10 @@ h1:not(.ProductList-title, .ProductItem-details-title) {
   font-size: 18px !important;
   line-height: 1.4rem !important;
   font-weight: 300 !important;
-  color: hsla(0%, 0%, 11%, 0.7);
+  color: hsla(0%,0%,11%,0.7);
 }
 
-h2,
-.BlogList-item-title,
-.ProductItem-details-title {
+h2, .BlogList-item-title, .ProductItem-details-title {
   font-family: calder-dark !important;
   font-size: 1.8rem !important;
 }
@@ -52,21 +50,21 @@ h3 {
 }
 
 .Mobile-bar--top {
-  box-shadow: 0.0rem 0.0rem 1.0rem rgba(0, 0, 0, 0.2);
+	box-shadow: 0.0rem 0.0rem 1.0rem rgba(0,0,0,0.2);
 }
 
 p a:hover {
-  color: #FF9C23 !important;
+      color: rgba(255, 0, 80, 1.0) !important;
 }
 
 p a {
-  color: rgba(0, 0, 0, 1.0) !important;
+  color: rgba(0,0,0,1.0) !important;
   text-decoration: none !important;
   border: none !important;
 }
 
 .sqs-cookie-banner-v2.LIGHT {
-  background-color: rgba(255, 255, 0, 0.9) !important;
+  background-color: rgba(255,255,0,0.9) !important;
   /* height: 2.2rem; */
 }
 
@@ -75,11 +73,30 @@ p a {
 }
 
 #block-yui_3_17_2_1_1697820462574_1907 {
-  display: none !important;
+	display: none !important;
 }
 
 .accordion-item__description {
   width: 100% !important;
   min-width: 100% !important;
   max-width: 100% !important;
+}
+
+.tweak-footer-layout-stacked .Footer-blocks--bottom {
+    padding-top: 0px !important;
+}
+
+.Footer {
+  border-top: 6px solid black;
+  background: url('https://images.squarespace-cdn.com/content/v1/652b0f65aeecd32f99b15cac/e2b993c0-89e6-40ad-a801-74da42b75aa6/cartel_auto_logo2b.png') center no-repeat;
+  background-size: 160px !important;
+  background-color: #444444 !important;
+}
+
+.Content-outer {
+  min-height: 100vh !important;
+}
+
+body {
+  background-color: white !important;
 }
