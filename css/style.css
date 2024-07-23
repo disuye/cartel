@@ -93,8 +93,8 @@ html {
 }
 @media (max-aspect-ratio: 1/1.4) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
         .footer-text {
-            font-size: calc(1.2rem + 1.2vh);
-            width: 90vw;
+            font-size: calc(0.8rem + 1.0vh);
+            width: 80vw;
             max-width: 800px;
             transition: 0.2s all ease-in-out;
         }
