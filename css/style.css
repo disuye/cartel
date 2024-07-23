@@ -80,3 +80,11 @@ body {
     font-size: 1.0rem;
     color:black;
 }
+/** HIDE SCROLL BARS **/
+html::-webkit-scrollbar { /* Chrome, Safari, Opera */
+    display: none;
+}
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
