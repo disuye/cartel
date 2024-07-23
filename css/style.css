@@ -3,10 +3,10 @@
 body {
     font-family: "Archivo Narrow", sans-serif;
     color: white !important;
-    background-color: #4E5358;
     background: linear-gradient(0deg, rgba(61,61,61,1) 0%, rgba(78,83,88,1) 30%, rgba(78,83,88,1) 90%, rgba(61,61,61,1) 100%);
-    width: 120vw;
-    height: 120vh;
+    background-color: #4E5358;
+    width: 100vw;
+    height: 100vh;
     text-align: center; 
     margin: 0; 
     padding: 0; 
@@ -14,7 +14,6 @@ body {
     text-rendering: geometricPrecision;
     white-space: pre-line;
     overflow-x: hidden;
-    border: 4.0rem black; 
 }
 .centerblock {
     display: block; 
