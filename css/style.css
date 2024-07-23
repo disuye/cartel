@@ -39,12 +39,12 @@ body {
 }
 .centerblock .logo {
     width: 75vw;
-    max-width: 600px !important;
+    max-width: 400px !important;
 }
 .words {
     font-size: calc(1.3rem + 0.5vw);
     width: 75vw;
-    max-width: 600px;
+    max-width: 400px;
     padding-top: 2.0rem;
     font-style: normal;
     font-weight: 400;
@@ -74,10 +74,10 @@ body {
     position: relative;
     left: 50%;
       transform: translate(-50%,-0%) rotateZ(0deg);
-    width: 75vw;
+    width: 85vw;
     max-width: 600px;
     text-align: left;
-    font-size: calc(0.9rem + 0.5vw);
+    font-size: calc(0.9rem + 0.5vh);
     color:black;
     border-left: 1rem black solid;
     padding-left: 1rem;
@@ -91,9 +91,11 @@ html {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
-@media only screen and (max-aspect-ratio: 1/1.4) and (orientation: portrait) {
+@media (max-aspect-ratio: 1/1.4) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
         .footer-text {
-            font-size: calc(1.0rem + 1.2vh);
+            font-size: calc(1.2rem + 1.2vh);
+            width: 90vw;
+            max-width: 800px;
             transition: 0.2s all ease-in-out;
         }
     }
