@@ -5,8 +5,8 @@ body {
     color: white !important;
     background-color: #4E5358;
     background: linear-gradient(0deg, rgba(61,61,61,1) 0%, rgba(78,83,88,1) 30%, rgba(78,83,88,1) 90%, rgba(61,61,61,1) 100%);
-    width: 100vw;
-    height: 100vh;
+    width: 120vw;
+    height: 120vh;
     text-align: center; 
     margin: 0; 
     padding: 0; 
