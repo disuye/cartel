@@ -4,7 +4,7 @@ body {
     font-family: "Archivo Narrow", sans-serif;
     color: white !important;
     background: #4E5358;
-    background: linear-gradient(0deg, rgba(61,61,61,1) 0%, rgba(78,83,88,1) 20%, rgba(78,83,88,1) 80%, rgba(61,61,61,1) 100%);
+    background: linear-gradient(0deg, rgba(61,61,61,1) 0%, rgba(78,83,88,1) 30%, rgba(78,83,88,1) 90%, rgba(61,61,61,1) 100%);
     width: 100vw;
     height: 100vh;
     text-align: center; 
@@ -33,26 +33,12 @@ body {
 .centerblock a:hover {
     position: relative;
     background-color: rgba(0, 0, 0, 0.12);
+    color:rgba(255,255,50,1.0);
 }
 .centerblock .logo {
     width: 75vw;
     max-width: 600px !important;
 }
-.footer {
-    display: block;
-    width: calc(100vw - 2.0rem);
-    position: absolute;
-    bottom: 0;
-    background: rgba(255,255,51,1.0);
-    font-size: 0.8rem;
-    text-align: center;
-    color: #4E5358;
-}
-
-.footer {
-    padding: 1.0rem;
-}
-
 .words {
     font-size: 1.4rem;
     line-height: 1.6rem;
@@ -61,18 +47,35 @@ body {
     padding-top: 2.0rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.8rem;
+    line-height: 1.9rem;
     word-spacing: -0.08rem;
 }
-
 .left {
     text-align: left;
 }
-
 .center {
     text-align: center;
 }
-
 .right {
     text-align: right;
+}
+.footer {
+    display: block;
+    width: calc(100vw - 2.0rem);
+    position: absolute;
+    bottom: 0;
+    background: rgba(255,255,50,1.0);
+    text-align: center;
+    padding: 1.0rem;
+}
+.footer-text {
+    display: block;
+    position: relative;
+    left: 50%;
+      transform: translate(-50%,-0%) rotateZ(0deg);
+    width: 75vw;
+    max-width: 600px;
+    text-align: left;
+    font-size: 1.0rem;
+    color:black;
 }
