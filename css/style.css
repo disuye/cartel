@@ -10,16 +10,18 @@ body {
 /*    background: linear-gradient(0deg, rgba(61,61,61,1) 0%, rgba(78,83,88,1) 30%, rgba(78,83,88,1) 90%, rgba(61,61,61,1) 100%);
  */   background-color: #4E5358;
     text-align: center; 
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
+    line-height: calc(1.2rem 0.5vw);
     text-rendering: geometricPrecision;
     white-space: pre-line;
     overflow-x: hidden;
+    box-shadow: inset 0px 5vh 5vh 0px rgba(0,0,0,0.15);
 }
 .centerblock {
     display: block; 
     position: absolute; 
     top: 50%; left: 50%;
-      transform: translate(-50%,-50%) rotateZ(0deg);
+      transform: translate(-50%,-70%) rotateZ(0deg);
     cursor: default;
     background-color: transparent;
 }
@@ -40,14 +42,12 @@ body {
     max-width: 600px !important;
 }
 .words {
-    font-size: 1.4rem;
-    line-height: 1.6rem;
+    font-size: calc(1.3rem + 0.5vw);
     width: 75vw;
     max-width: 600px;
     padding-top: 2.0rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.9rem;
     word-spacing: -0.08rem;
 }
 .left {
@@ -77,8 +77,11 @@ body {
     width: 75vw;
     max-width: 600px;
     text-align: left;
-    font-size: 1.0rem;
+    font-size: calc(0.9rem + 0.5vw);
     color:black;
+    border-left: 1rem black solid;
+    padding-left: 1rem;
+    transition: 0.2s all ease-in-out; 
 }
 /** HIDE SCROLL BARS **/
 html::-webkit-scrollbar { /* Chrome, Safari, Opera */
@@ -88,3 +91,9 @@ html {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+@media only screen and (max-aspect-ratio: 1/1.4) and (orientation: portrait) {
+        .footer-text {
+            font-size: calc(1.0rem + 1.2vh);
+            transition: 0.2s all ease-in-out;
+        }
+    }
