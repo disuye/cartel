@@ -21,7 +21,7 @@ body {
     display: block; 
     position: absolute; 
     top: 50%; left: 50%;
-      transform: translate(-50%,-70%) rotateZ(0deg);
+      transform: translate(-50%,-55%) rotateZ(0deg);
     cursor: default;
     background-color: transparent;
 }
