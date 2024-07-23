@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    font-family: "Archivo Narrow", sans-serif;
+    color: white !important;
+    background-color: #4E5358;
+    width: 100vw;
+    height: 100vh;
+    text-align: center; 
+    margin: 0; 
+    padding: 0; 
+    font-size: 1.5rem; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem;
+    word-spacing: -0.08rem;
+    text-rendering: geometricPrecision;
+    white-space: pre-line;
+    overflow-x: hidden;
+}
+.centerblock {
+    display: block; 
+    position: absolute; 
+    top: 50%; left: 50%;
+      transform: translate(-50%,-50%) rotateZ(0deg);
+    cursor: default;
+    background-color: transparent;
+}
+.centerblock a {
+    display: inline-block;
+    text-decoration: none; 
+    padding: 0.0rem 0.4em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.15);
+}		
+.centerblock a:hover {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.centerblock .logo {
+    width: 75vw;
+    max-width: 600px !important;
+}
+.words {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: left;
+    width: 75vw;
+    max-width: 600px;
+    padding-top: 2.0rem;
+}
