@@ -15,9 +15,6 @@ body {
     white-space: pre-line;
     overflow-x: hidden; 
 }
-* {
-    transition: 0.5s all ease-in-out;
-}
 .centerblock {
     display: block; 
     position: absolute; 
