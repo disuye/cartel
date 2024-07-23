@@ -3,7 +3,7 @@
 body {
     font-family: "Archivo Narrow", sans-serif;
     color: white !important;
-    background: #4E5358;
+    background-color: #4E5358;
     background: linear-gradient(0deg, rgba(61,61,61,1) 0%, rgba(78,83,88,1) 30%, rgba(78,83,88,1) 90%, rgba(61,61,61,1) 100%);
     width: 100vw;
     height: 100vh;
