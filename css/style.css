@@ -13,7 +13,8 @@ body {
     font-size: 1.5rem; 
     text-rendering: geometricPrecision;
     white-space: pre-line;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    border: 4.0rem black; 
 }
 .centerblock {
     display: block; 
