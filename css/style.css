@@ -13,7 +13,7 @@ body {
     font-size: 1.5rem;
     line-height: calc(1.2rem 0.5vw);
     text-rendering: geometricPrecision;
-    white-space: pre-line;
+/*    white-space: pre-line; */
     overflow-x: hidden;
     box-shadow: inset 0px 5vh 5vh 0px rgba(0,0,0,0.15);
 }
@@ -25,26 +25,47 @@ body {
     cursor: default;
     background-color: transparent;
 }
-.centerblock a {
+.centerblock .logo {
+    width: 75vw;
+    max-width: 300px !important;
+}
+.header {
+    display: block;
+    width: calc(100vw + 2px);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    text-align: left;
+    padding: 0.0rem;
+}
+.header .logo {
+    display: inline-block;
+    position: absolute;
+    max-height: 2.0rem !important;
+    right: 0.6rem;
+    top: 0.5rem;
+}
+.header a {
     display: inline-block;
     text-decoration: none; 
-    padding: 0.0rem 0.4em;
+    padding: 0.4rem 0.4em;
     color: white;
     background-color: rgba(0, 0, 0, 0.25);
+    font-size: 1.2rem;
 }		
-.centerblock a:hover {
-    position: relative;
+.header a:hover {
     background-color: rgba(0, 0, 0, 0.12);
     color:rgba(255,255,50,1.0);
 }
-.centerblock .logo {
-    width: 75vw;
-    max-width: 400px !important;
+.header .alogo {
+   all: unset;
+   all: initial;
+   cursor: pointer;
 }
 .words {
     font-size: calc(1.3rem + 0.5vw);
     width: 75vw;
-    max-width: 400px;
+    max-width: 600px;
     padding-top: 2.0rem;
     font-style: normal;
     font-weight: 400;
@@ -61,7 +82,7 @@ body {
 }
 .footer {
     display: block;
-    width: calc(100vw - 2.0rem + 1px);
+    width: calc(100vw - 2.0rem + 2px);
     position: fixed;
     z-index: 10;
     bottom: 0;
