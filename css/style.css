@@ -42,6 +42,7 @@ body {
     display: inline-block;
     position: absolute;
     max-height: 2.0rem !important;
+    float: left;
     right: 0.6rem;
     top: 0.5rem;
     -webkit-filter: invert(1);
@@ -63,12 +64,13 @@ body {
     padding: 1.0rem 0.4em 0.8rem 0.4em;
     background-color: rgba(0, 0, 0, 0.12);
     color:rgba(255,255,50,1.0);
-    transition: 0.1s all ease-in-out;
+    transition: 0.15s all ease-in-out;
     }
 .header .alogo {
    all: unset;
    all: initial;
    cursor: pointer;
+   display: none;
     }
 .words {
     font-size: calc(1.3rem + 0.5vw);
@@ -97,6 +99,14 @@ body {
     background:rgba(255,255,50,1.0);
     text-align: center;
     padding: 1.0rem;
+    }
+.footer {
+    right: calc(-100vw + 2.0rem);
+    transition: 0.3s all ease-in-out;
+    }
+.footer:hover {
+    right: 0;
+    transition: 0.15s all ease-in-out;
     }
 .footer-text {
     display: block;
