@@ -57,12 +57,13 @@ body {
     font-family: "Rethink Sans", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    transition: 0.4s all ease-in-out;
+    transition: 0.3s all ease-in-out;
     }
 .header a:hover {
-    padding: 1.0rem 1.0em 0.4rem 1.0em;
+    padding: 1.0rem 0.4em 0.8rem 0.4em;
     background-color: rgba(0, 0, 0, 0.12);
     color:rgba(255,255,50,1.0);
+    transition: 0.1s all ease-in-out;
     }
 .header .alogo {
    all: unset;
