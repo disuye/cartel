@@ -29,7 +29,7 @@ body {
     width: 75vw;
     max-width: 300px !important;
     }
-.header {
+    .header {
     display: block;
     width: calc(100vw + 2px);
     z-index: 10;
@@ -94,7 +94,7 @@ body {
     position: fixed;
     z-index: 10;
     bottom: 0;
-    background: rgba(255,255,50,1.0);
+    background:rgba(255,255,50,1.0);
     text-align: center;
     padding: 1.0rem;
     }
@@ -107,8 +107,8 @@ body {
     max-width: 600px;
     text-align: left;
     font-size: calc(0.9rem + 0.5vh);
-    color:black;
-    border-left: 1.0rem black solid;
+    color: #4E5358;
+    border-left: 1.0rem#4E5358 solid;
     padding-left: 1rem;
     transition: 0.2s all ease-in-out; 
     }
