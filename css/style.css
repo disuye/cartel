@@ -101,7 +101,7 @@ body {
     padding: 1.0rem;
     }
 .footer {
-    right: calc(-100vw + 2.0rem);
+    right: calc(-100vw + 1.0rem);
     transition: 0.3s all ease-in-out;
     }
 .footer:hover {
