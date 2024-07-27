@@ -89,7 +89,7 @@ html {
     left: 50%;
     top: 50%; 
     transform: translate(-50%, -50%) rotateX(90deg);
-    border-radius: 0.4rem;
+    border-radius: 0.2rem;
     max-width: calc(100vw - 8.0rem);
     max-height: calc(100vh - 8.0rem);
     position: fixed; 
