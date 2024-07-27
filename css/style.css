@@ -15,6 +15,18 @@ body {
     text-rendering: geometricPrecision;
     overflow-x: hidden;
 }
+#bg {
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    opacity: 0.15;
+    position: absolute;
+    display: block;
+    top: 0;
+    background-image: url(../img/stills/m3speedo.jpg);
+    background-position: center;
+    background-size: cover;
+}
 /** HIDE SCROLL BARS **/
 html::-webkit-scrollbar { /* Chrome, Safari, Opera */
     display: none;
