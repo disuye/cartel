@@ -172,10 +172,8 @@ h1 {
 .show-text {
     display: block;
     position: relative;
-    left: 50%;
-    transform: translate(-50%,-0%) rotateZ(0deg);
     width: calc(100vw - 8.0rem);
-    max-width: 800px;
+    max-width: 600px;
     text-align: left;
     font-size: calc(0.9rem + 0.5vh);
     color: #4E5358;
