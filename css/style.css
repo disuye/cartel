@@ -185,7 +185,7 @@ h1 {
 .show-text {
     display: block;
     position: relative;
-    width: calc(100vw - 8.0rem);
+    width: calc(100vw - 10.0rem);
     max-width: 600px;
     text-align: left;
     font-size: calc(0.9rem + 0.5vh);
