@@ -16,14 +16,6 @@ body {
     overflow-x: hidden;
 /*    background: linear-gradient(0deg, rgba(61,61,61,1) 0%, rgba(78,83,88,1) 30%, rgba(78,83,88,1) 90%, rgba(61,61,61,1) 100%); */
 /*    box-shadow: inset 0px 5vh 5vh 0px rgba(0,0,0,0.15); */
-    }
-/** HIDE SCROLL BARS **/
-html::-webkit-scrollbar { /* Chrome, Safari, Opera */
-    display: none;
-    }
-html {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
     }   
 .centerblock {
     display: block; 
@@ -88,7 +80,7 @@ html {
 #contact-show {
     display: block;
     opacity: 0.0;
-    border-radius: 0.4rem;
+    border-radius: 0.2rem;
     max-width: calc(100vw - 8.0rem);
     max-height: calc(100vh - 8.0rem);
     position: absolute; 
@@ -98,8 +90,9 @@ html {
     background:rgba(255,255,50,1.0);
     text-align: center;
     padding: 2.0rem;
-    overflow: scroll;
     z-index: 10;
+    overflow-y: auto;
+    overflow-x: hidden;
     }    
 #cartel500-show:target, 
 #about-show:target, 
@@ -186,4 +179,23 @@ h1 {
             transition: 0.2s all ease-in-out;
         }
     }
+/** HIDE SCROLL BARS **/
+html::-webkit-scrollbar { /* Chrome, Safari, Opera */
+    display: none;
+    width: 0px;
+    }
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+}
+html::-webkit-scrollbar-thumb {
+    background: white;
+    -webkit-box-shadow: none;
+}
+html::-webkit-scrollbar-thumb:window-inactive {
+    background: none;
+}    
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }    
 /* END */
