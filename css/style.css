@@ -127,9 +127,6 @@ body {
 #cartel500-show:target, 
 #contact-show:target {
     opacity: 1.0;
-    max-height: calc(100vh - 16.0rem);
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
     transition: 0.3s all ease-in-out;
     z-index: 100;
 }
