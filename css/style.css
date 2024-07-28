@@ -42,8 +42,6 @@ body {
     display: block;
     top: 0;
     background-image: url(../img/figures/05.png);   
-        -webkit-filter: grayscale(100%) blur(0.0rem);
-        filter: grayscale(100%) blur(0.0rem);
     background-position: center;
     background-size: cover;
     cursor: default;
@@ -118,9 +116,6 @@ body {
     position: fixed; 
     transition: 0.3s all ease-in-out;
     background: var(--brand);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
     padding: 2.0rem;
     z-index: 10;
     overflow-y: auto;
@@ -146,7 +141,7 @@ body {
     position: fixed;
     z-index: -1;
     display: block;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     width: 100vw;
     height: 100vh;
@@ -155,8 +150,8 @@ body {
     -o-filter: invert(1);
     -ms-filter: invert(1);
     filter: invert(1);
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%) rotateZ(45deg);
+    top: 0; left: 0;
+    transform: translate(-50%, -50%) rotateZ(-45deg);
 }
 #about-show:after {
     background-image: url(../img/figures/03.png);
