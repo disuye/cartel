@@ -1,15 +1,36 @@
 /* cartelautomotive.com // cartel500.com */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@property --brand { /* yellow */
+    syntax: "<color>";
+    inherits: false;
+    initial-value: rgba(255,255,50,1.0);
+}
+@property --base { /* grey */
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #4E5358;
+}
+@property --primary { /* black */
+    syntax: "<color>";
+    inherits: false;
+    initial-value: black;
+}
+@property --secondary { /* white */
+    syntax: "<color>";
+    inherits: false;
+    initial-value: white;
+}
 body {
-    width: 100vw;
+    width: calc(100vw - 0.5rem);
+    border-left: 0.5rem solid var(--brand);
     min-width: 400px !important;
     height: 100vh;
     margin: 0; 
     padding: 0; 
     font-family: "Archivo Narrow", sans-serif;
     color: white !important;
-    background-color: #4E5358;
+    background-color: var(--base);
     text-align: center; 
     font-size: 1.5rem;
     line-height: calc(1.2rem 0.5vw);
@@ -36,14 +57,6 @@ body {
     background-position: center;
     background-size: cover;
     cursor: default;
-}
-/** HIDE SCROLL BARS **/
-html::-webkit-scrollbar { /* Chrome, Safari, Opera */
-    display: none;
-}
-html {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
 }   
 .centerblock {
     display: block; 
@@ -79,7 +92,7 @@ html {
     float: left;
     text-decoration: none; 
     padding: 0.7rem 0.6em 0.7rem 0.6em;
-    color: white;
+    color: var(--secondary);
     background-color: rgba(0, 0, 0, 0.25);
     font-size: 0.8rem;
     font-weight: 500;
@@ -90,7 +103,7 @@ html {
 .header a:hover {
     padding: 0.7rem 0.6em 1.0rem 0.6em;
     background-color: rgba(0, 0, 0, 0.12);
-    color:rgba(255,255,50,1.0);
+    color: var(--brand);
     transition: 0.15s all ease-in-out;
 }
 .header .alogo {
@@ -114,7 +127,7 @@ html {
     max-height: calc(100vh - 16.0rem);
     position: fixed; 
     transition: 0.3s all ease-in-out;
-    background:rgba(255,255,50,1.0);
+    background: var(--brand);
     text-align: center;
     padding: 2.0rem;
     z-index: 10;
@@ -134,14 +147,14 @@ html {
     z-index: 100;
 }
 .show-text a {
-    color: black;
+    color: var(--primary);
 }    
 .close {
     right: 0.2rem;
     top: 0.1rem;
     position: absolute;
     display: block;
-    color: black;
+    color: var(--primary);
     text-decoration: none;
     font-size: 1.0rem;
     padding: 0.4rem;
@@ -152,7 +165,7 @@ html {
 h1 {
     font-family: "Rethink Sans", sans-serif;
     font-weight: 900;
-    color:  #4E5358;
+    color: var(--base);
     padding: 0;
     margin: 0;
     text-align: left;
@@ -184,7 +197,7 @@ h1 {
     position: fixed;
     z-index: 10;
     bottom: 0;
-    background:rgba(255,255,50,1.0);
+    background: var(--brand);
     text-align: center;
     padding: 2.0rem;
 }
@@ -195,11 +208,11 @@ h1 {
     max-width: 600px;
     text-align: left;
     font-size: calc(0.9rem + 0.5vh);
-    color: #4E5358;
-    border-left: 0.5rem#4E5358 solid;
+    color: var(--base);
+    border-left: 0.5rem solid var(--base);
     padding-left: 1.0rem;
     transition: 0.2s all ease-in-out;
-    }
+}
 @media (max-aspect-ratio: 1/1.4) 
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
@@ -207,24 +220,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
             font-size: calc(0.8rem + 1.0vh);
             transition: 0.2s all ease-in-out;
         }
-/*        .header {
-            top: calc(100vh - 2.4rem);
-            min-height: 2.4rem;
-        }
-        .header a {
-            float: right;
-            padding: 0.7rem 0.6em 0.7rem 0.6em; 
-        }
-        .header a:hover {
-            padding: 1.0rem 0.6em 0.7rem 0.6em;
-            margin-top: -0.3rem;
-        } */ 
-    }
+}
 /** HIDE SCROLL BARS **/
 html::-webkit-scrollbar { /* Chrome, Safari, Opera */
     display: none;
     width: 0px;
-    }
+}
 html::-webkit-scrollbar-track {
     -webkit-box-shadow: none;
 }
@@ -238,5 +239,5 @@ html::-webkit-scrollbar-thumb:window-inactive {
 html {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    }    
+}
 /* END */
