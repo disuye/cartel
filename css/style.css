@@ -207,7 +207,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
             font-size: calc(0.8rem + 1.0vh);
             transition: 0.2s all ease-in-out;
         }
-        .header {
+/*        .header {
             top: calc(100vh - 2.4rem);
             min-height: 2.4rem;
         }
@@ -218,7 +218,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
         .header a:hover {
             padding: 1.0rem 0.6em 0.7rem 0.6em;
             margin-top: -0.3rem;
-        } 
+        } */ 
     }
 /** HIDE SCROLL BARS **/
 html::-webkit-scrollbar { /* Chrome, Safari, Opera */
