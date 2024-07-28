@@ -26,6 +26,7 @@ body {
     background-image: url(../img/stills/mtech2.jpg);
     background-position: center;
     background-size: cover;
+    cursor: default;
 }
 /** HIDE SCROLL BARS **/
 html::-webkit-scrollbar { /* Chrome, Safari, Opera */
