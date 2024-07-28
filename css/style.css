@@ -9,6 +9,8 @@
 }
 body {
     width: calc(100vw - 0.5rem);
+    position: fixed;
+    left:0; top:0;
     border-left: 0.5rem solid var(--brand);
     min-width: 400px !important;
     height: 100vh;
@@ -102,8 +104,8 @@ body {
     z-index: 0;
 }
 #about-show, 
-#cartel500-show, 
 #shop-show,
+#cartel500-show, 
 #contact-show {
     display: block;
     opacity: 0.0;
@@ -125,9 +127,9 @@ body {
     overflow-x: hidden;
     box-shadow: 0px 1vh 10vh 0px rgba(0,0,0,0.80);
 }    
-#cartel500-show:target, 
 #about-show:target, 
 #shop-show:target,
+#cartel500-show:target, 
 #contact-show:target {
     opacity: 1.0;
     max-height: calc(100vh - 16.0rem);
@@ -136,21 +138,50 @@ body {
     transition: 0.3s all ease-in-out;
     z-index: 100;
 }
-#bg-show {
+#about-show:after,
+#shop-show:after,
+#cartel500-show:after,
+#contact-show:after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    display: block;
+    background-size:cover;
+    background-position: center;
     width: 100vw;
     height: 100vh;
-    z-index: 0;
-    opacity: 1.0;
-    position: absolute;
-    display: block;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%) rotateZ(45deg);
-    background-position: center;
-    background-size: cover;
-    cursor: default;
     -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    -o-filter: invert(1);
+    -ms-filter: invert(1);
     filter: invert(1);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) rotateZ(22deg);
 }
+#about-show:after {
+    background-image: url(../img/figures/03.png);
+}
+#shop-show:after {
+    background-image: url(../img/figures/04.png);
+}
+#cartel500-show:after {
+    background-image: url(../img/figures/08.png);
+}
+#contact-show:after {
+    background-image: url(../img/figures/07.png);
+}
+.show-text {
+    display: block;
+    position: relative;
+    width: calc(100vw - 9.0rem);
+    max-width: 600px;
+    text-align: left;
+    font-size: calc(0.9rem + 0.5vh);
+    color: var(--base);
+    border-left: 0.5rem solid var(--base);
+    padding-left: 1.0rem;
+    transition: 0.2s all ease-in-out;
+}  
 .show-text a {
     color: var(--primary);
 }    
@@ -205,18 +236,6 @@ h1 {
     background: var(--brand);
     text-align: center;
     padding: 2.0rem;
-}
-.show-text {
-    display: block;
-    position: relative;
-    width: calc(100vw - 9.0rem);
-    max-width: 600px;
-    text-align: left;
-    font-size: calc(0.9rem + 0.5vh);
-    color: var(--base);
-    border-left: 0.5rem solid var(--base);
-    padding-left: 1.0rem;
-    transition: 0.2s all ease-in-out;
 }
 @media (max-aspect-ratio: 1/1.4) 
 and (orientation: portrait)
