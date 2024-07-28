@@ -200,7 +200,9 @@ h1 {
     padding-left: 1.0rem;
     transition: 0.2s all ease-in-out;
     }
-@media (max-aspect-ratio: 1/1.4) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-aspect-ratio: 1/1.4) 
+and (orientation: portrait) 
+and  (min-resolution: 193dpi) {
         .show-text {
             font-size: calc(0.8rem + 1.0vh);
             transition: 0.2s all ease-in-out;
