@@ -40,8 +40,8 @@ body {
     display: block;
     top: 0;
     background-image: url(../img/figures/05.png);   
-        -webkit-filter: grayscale(100%) blur(0.1rem);
-        filter: grayscale(100%) blur(0.1rem);
+        -webkit-filter: grayscale(100%) blur(0.0rem);
+        filter: grayscale(100%) blur(0.0rem);
     background-position: center;
     background-size: cover;
     cursor: default;
