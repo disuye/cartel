@@ -1,25 +1,11 @@
 /* cartelautomotive.com // cartel500.com */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
-@property --brand { /* yellow */
-    syntax: "<color>";
-    inherits: false;
-    initial-value: rgba(255,255,50,1.0);
-}
-@property --base { /* grey */
-    syntax: "<color>";
-    inherits: false;
-    initial-value: #4E5358;
-}
-@property --primary { /* black */
-    syntax: "<color>";
-    inherits: false;
-    initial-value: black;
-}
-@property --secondary { /* white */
-    syntax: "<color>";
-    inherits: false;
-    initial-value: white;
+:root {
+    --brand:rgba(255,255,50,1.0);
+    --base:#4E5358;
+    --primary:black;
+    --secondary:white;
 }
 body {
     width: calc(100vw - 0.5rem);
