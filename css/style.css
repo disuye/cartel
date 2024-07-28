@@ -156,7 +156,7 @@ body {
     -ms-filter: invert(1);
     filter: invert(1);
     top: 50%; left: 50%;
-    transform: translate(-50%, -50%) rotateZ(22deg);
+    transform: translate(-50%, -50%) rotateZ(45deg);
 }
 #about-show:after {
     background-image: url(../img/figures/03.png);
