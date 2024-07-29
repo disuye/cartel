@@ -228,6 +228,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .show-text {
         font-size: calc(0.8rem + 1.0vh);
         transition: 0.2s all ease-in-out;
+        padding-right: 2.0rem;
     }
     #about-show, 
     #shop-show,
