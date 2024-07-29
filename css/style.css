@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 :root {
     --brand:rgba(255,255,50,1.0);
-    --base:#4E5358;
+    --base:rgba(78,83,88,1.0);
     --primary:black;
     --secondary:white;
 }
@@ -92,9 +92,8 @@ body {
 #contact-show {
     display: block;
     opacity: 0.0;
-    left: 50%;
-    top: 50%; 
-    transform: translate(-50%, -50%);
+    left: 50%; top: 50%; 
+    transform: translate(-50%, -50%) rotateZ(0deg);
     border-radius: 0.2rem;
     max-width: calc(100vw - 8.0rem);
     max-height: calc(100vh - 16.0rem);
@@ -127,19 +126,20 @@ body {
 #contact-show:before {
     background-image: url(../img/figures/07.png);
 }
-#about-show:before,
-#shop-show:before,
-#cartel500-show:before,
-#contact-show:before {
+#about-show::before,
+#shop-show::before,
+#cartel500-show::before,
+#contact-show::before {
     content: "";
+    display: block;
     position: fixed;
+    left: 50%; top: 50%; 
+    transform: translate(-50%, -50%) rotateZ(0deg);
     z-index: -1;
     background-size: cover;
     background-position: center;
     width: 120vw;
     height: 100%;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%) rotateZ(0deg);
     opacity: 0.05;
 /*    -webkit-filter: invert(1);
     -moz-filter: invert(1);
@@ -157,25 +157,36 @@ body {
     color: var(--base);
     border-left: 0.5rem solid var(--base);
     padding-left: 1.0rem;
+    padding-right: 0.5rem;
     transition: 0.2s all ease-in-out;
 }  
 .show-text a {
     color: var(--primary);
-}    
-.close {
+}
+.show-text::after {
+    content: "";
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 0.5rem;
+    margin-top: 2.1rem;
+    margin-left: -1.0rem;
+    padding-right: 2.0rem;
+    background-color: var(--base);
+    background: linear-gradient(90deg, var(--base) 15%, var(--brand) 95%);
+}   
+.close, .close::after {
+    display: block;
+    position: fixed;
     right: 0.2rem;
     top: 0.1rem;
-    position: absolute;
-    display: block;
+    float: right;
     color: var(--primary);
     text-decoration: none;
     font-size: 1.0rem;
     padding: 0.4rem;
-}
-.close:before {
     content: "\2715";
-/*    content: "\2573"; */
-} 
+}
 h1 {
     font-family: "Rethink Sans", sans-serif;
     font-weight: 900;
