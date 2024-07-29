@@ -194,43 +194,40 @@ body {
 #show-bg {
     display: block;
     position: relative;
-    top:0; left:0;
-    width: 100%;
-    max-width: calc(600px + 3.0rem);
-    margin: auto;
-    min-height: 20vh;
-    max-height: 12rem;
+    top:-2.0rem; left:-2.0rem;
+    width: calc(100% + 6.0rem);
+    margin-bottom: -1.5rem;
+    min-height: 33vh;
     background-size: 100%;
+    background-position: center;
     transition: 0.2s all ease-in-out;
 }
 #about-show #show-bg {
     background-image: url(../img/stills/bbs5style.jpg);
-    background-position: center 20%;
     background-size: 150%;
 }
 #shop-show #show-bg {
     background-image: url(../img/stills/s14b20.jpg);
-    background-position: center 35%;
 }
 #cartel500-show #show-bg {
     background-image: url(../img/stills/dogleg.jpg);
-    background-position: center 50%;
 }
 #contact-show #show-bg {
     background-image: url(../img/stills/m3speedo.jpg);
-    background-position: center 90%;
 }   
 .close, .close::after {
     display: block;
     position: fixed;
-    right: 0.2rem;
-    top: 0.1rem;
+    z-index: 1000;
+    right: 0;
+    top: 0;
     float: right;
-    color: var(--primary);
+    color: var(--secondary);
     text-decoration: none;
     font-size: 1.0rem;
-    padding: 0.4rem;
+    padding: 0.4rem 0.6rem;
     content: "\2715";
+    background: rgba(0, 0, 0, 0.25);
 }
 h1 {
     font-family: "Rethink Sans", sans-serif;
@@ -273,10 +270,6 @@ and (orientation: landscape) {
     .show-text {
         max-width: 35vw;
         margin: 0vw 5vw;
-        transition: 0.2s all ease-in-out;
-    }
-    #show-bg {
-        max-width: calc(35vw + 3.0rem);
         transition: 0.2s all ease-in-out;
     }
     h1 {
