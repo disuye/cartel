@@ -198,7 +198,8 @@ body {
     width: 100%;
     max-width: calc(600px + 3.0rem);
     margin: auto;
-    height: 8rem;
+    min-height: 20vh;
+    max-height: 12rem;
     background-size: 100%;
     transition: 0.2s all ease-in-out;
 }
