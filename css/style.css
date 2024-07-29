@@ -109,6 +109,7 @@ body {
     border-radius: 0.2rem;
     max-width: calc(100vw - 8.0rem);
     max-height: calc(100vh - 16.0rem);
+    min-height: 135px;
     position: fixed; 
     transition: 0.3s all ease-in-out;
     background: var(--brand95);
@@ -232,7 +233,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     #shop-show,
     #cartel500-show, 
     #contact-show {
-        min-height: calc(100vh - 4.0rem);
+        min-height: 270px;
     }
 }
 @media (min-width: 1600px) 
