@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 :root {
     --brand:rgba(255,255,50,1.0);
-    --brand50:rgba(255,255,50,0.5);
-    --brand95:rgba(255,255,50,0.95);
     --base:rgba(78,83,88,1.0);
     --primary:black;
     --secondary:white;
@@ -107,12 +105,12 @@ body {
     left: 50%; top: 50%; 
     transform: translate(-50%, -50%) rotateZ(0deg);
     border-radius: 0.2rem;
-    max-width: calc(100vw - 8.0rem);
+    max-width: calc(100vw - 6.0rem);
     max-height: calc(100vh - 16.0rem);
     min-height: 135px;
     position: fixed; 
     transition: 0.3s all ease-in-out;
-    background: var(--brand95);
+    background: var(--brand);
     padding: 2.0rem;
     z-index: 10;
     overflow-y: auto;
@@ -172,6 +170,8 @@ body {
     padding-left: 1.0rem;
     padding-right: 2.0rem;
     transition: 0.2s all ease-in-out;
+    text-align: left;
+    text-justify: inter-character;
 }  
 .show-text a {
     color: var(--primary);
@@ -228,7 +228,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .show-text {
         font-size: calc(0.8rem + 1.0vh);
         transition: 0.2s all ease-in-out;
-        padding-right: 2.0rem;
     }
     #about-show, 
     #shop-show,
