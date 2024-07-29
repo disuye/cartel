@@ -3,9 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 :root {
     --brand:rgba(255,255,50,1.0);
+    --brand50:rgba(255,255,50,0.5);
+    --brand95:rgba(255,255,50,0.95);
     --base:rgba(78,83,88,1.0);
     --primary:black;
     --secondary:white;
+    --transparent: rgba(0,0,0,0);
 }
 body {
     width: calc(100vw - 0.5rem);
@@ -108,7 +111,7 @@ body {
     max-height: calc(100vh - 16.0rem);
     position: fixed; 
     transition: 0.3s all ease-in-out;
-    background: var(--brand);
+    background: var(--brand95);
     padding: 2.0rem;
     z-index: 10;
     overflow-y: auto;
@@ -182,7 +185,7 @@ body {
     margin-left: -1.0rem;
     padding-right: 2.0rem;
     background-color: var(--base);
-    background: linear-gradient(90deg, var(--base) 15%, var(--brand) 95%);
+    background: linear-gradient(90deg, var(--base) 15%, var(--transparent) 95%);
 }   
 .close, .close::after {
     display: block;
@@ -224,6 +227,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .show-text {
         font-size: calc(0.8rem + 1.0vh);
         transition: 0.2s all ease-in-out;
+    }
+    #about-show, 
+    #shop-show,
+    #cartel500-show, 
+    #contact-show {
+        min-height: calc(100vh - 4.0rem);
     }
 }
 @media (min-width: 1600px) 
