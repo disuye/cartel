@@ -170,7 +170,7 @@ body {
     color: var(--base);
     border-left: 0.5rem solid var(--base);
     padding-left: 1.0rem;
-    padding-right: 0.5rem;
+    padding-right: 2.0rem;
     transition: 0.2s all ease-in-out;
 }  
 .show-text a {
