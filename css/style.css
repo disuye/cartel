@@ -171,7 +171,7 @@ body {
     padding-right: 2.0rem;
     transition: 0.2s all ease-in-out;
     text-align: left;
-    text-justify: inter-character;
+/*    text-justify: inter-character; */
 }  
 .show-text a {
     color: var(--primary);
