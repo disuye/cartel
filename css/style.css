@@ -201,9 +201,18 @@ body {
     background: linear-gradient(90deg, var(--base) 15%, var(--transparent) 95%);
 }
 .show-product {
-    display: none;
+    display: block;
     padding-top: 1.0rem;
     margin-left: -1.0rem;
+}
+.show-product a {
+    opacity: 1.0;
+    transition: 0.3s all ease-in-out;
+    text-decoration: none;
+}
+.show-product a:hover {
+    opacity: 0.85;
+    transition: 0.15s all ease-in-out;
 }
 .product-info {
     border-top: 0.5rem solid var(--base);
