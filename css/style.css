@@ -23,10 +23,11 @@ body {
     color: white !important;
     background-color: var(--base);
     text-align: center; 
-    font-size: 1.5rem;
+    font-size: 12px !important;
     line-height: calc(1.2rem 0.5vw);
     text-rendering: geometricPrecision;
     overflow-x: hidden;
+    zoom: 100%;
 }
 #about-show, 
 #cartel500-show, 
@@ -80,7 +81,7 @@ body {
 .centerblock {
     display: block; 
     position: absolute; 
-    top: 50vh; left: 50vw;
+    top: 50%; left: calc(50% - 0.5rem);
     transform: translate(-50%,-50%) rotateZ(0deg);
     cursor: default;
     background-color: transparent;
@@ -159,6 +160,11 @@ body {
     -o-filter: invert(1);
     -ms-filter: invert(1);
     filter: invert(1); */
+}
+object {
+    font-family: "Archivo Narrow", sans-serif;
+    width: 100%;
+    margin-left: -0.5rem;
 }
 .show-text {
     display: block;
