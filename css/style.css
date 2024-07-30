@@ -203,11 +203,12 @@ body {
     transition: 0.2s all ease-in-out;
 }
 #about-show #show-bg {
-    background-image: url(../img/stills/bbs5style.jpg);
-    background-size: 150%;
+    background-image: url(../img/stills/s14b20.jpg);
+    background-position: -20%;
 }
 #shop-show #show-bg {
-    background-image: url(../img/stills/s14b20.jpg);
+    background-image: url(../img/stills/bbs5style.jpg);
+    background-size: 150%;
 }
 #cartel500-show #show-bg {
     background-image: url(../img/stills/dogleg.jpg);
