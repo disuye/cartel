@@ -200,6 +200,41 @@ body {
     background-color: var(--base);
     background: linear-gradient(90deg, var(--base) 15%, var(--transparent) 95%);
 }
+.show-product {
+    padding-top: 1.0rem;
+    margin-left: -1.0rem;
+}
+.product-info {
+    border-top: 0.5rem solid var(--base);
+    margin-top: 1.0rem;
+    padding-left: 1.0rem;
+    line-height: 1.2rem;
+}
+.product-info h2 {
+    font-family: var(--font-one);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.9rem;
+    line-height: 1.0em;
+    padding: 0.5rem 0.25rem 0.2rem 0rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0rem;
+    text-align: right;
+    word-break: keep-all;
+    line-break: loose;
+    word-wrap: break-word;
+    background-color: var(--base);
+    color: var(--secondary);
+}
+.product-info img {
+    width: 33%;
+    float: left;
+    vertical-align: text-top;
+    padding: 1.0rem 1.0rem 1.0rem 1.0rem;
+}
+.product-info span {
+    font-size: 1.0rem;
+}
 #show-bg {
     display: block;
     position: relative;
