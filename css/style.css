@@ -11,9 +11,9 @@
     --transparent: rgba(0,0,0,0);
 }
 body {
-    width: calc(100vw - 0.5rem);
+    width: 100vw;
     position: fixed;
-    left:0; top:0;
+    left:0.5rem; top:0;
     border-left: 0.5rem solid var(--highlight);
     min-width: 400px !important;
     height: 100vh;
@@ -80,7 +80,7 @@ body {
 .centerblock {
     display: block; 
     position: absolute; 
-    top: 50%; left: 50%;
+    top: 50vh; left: 50vw;
     transform: translate(-50%,-50%) rotateZ(0deg);
     cursor: default;
     background-color: transparent;
