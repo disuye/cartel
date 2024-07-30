@@ -201,6 +201,7 @@ body {
     background: linear-gradient(90deg, var(--base) 15%, var(--transparent) 95%);
 }
 .show-product {
+    display: none;
     padding-top: 1.0rem;
     margin-left: -1.0rem;
 }
@@ -224,6 +225,7 @@ body {
     line-break: loose;
     word-wrap: break-word;
     background-color: var(--base);
+    background: linear-gradient(270deg, var(--base) 25%, var(--transparent) 100%);    
     color: var(--secondary);
 }
 .product-info img {
