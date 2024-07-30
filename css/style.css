@@ -1,14 +1,16 @@
 /* cartelautomotive.com // cartel500.com */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
     --highlight: rgba(255,25,75,1.0);
     --base:rgba(78,83,88,1.0);
     --primary:rgba(0,0,0,1.0);
     --secondary:rgba(255,255,255,1.0);
     --transparent: rgba(0,0,0,0);
-    --font-one: "Archivo Narrow", sans-serif;
+    --font-one: "Barlow Condensed", sans-serif;
     --font-two: "Rethink Sans", sans-serif;
+    --font-three: "Archivo Narrow", sans-serif;
     --recenter: translate(-50%, -50%) rotateZ(0deg);
 }
 body {
@@ -92,11 +94,13 @@ body {
     max-width: 300px !important;
 }
 .message {
+    font-family: var(--font-three) ;
+    font-weight: 200;
     font-size: 1.4rem;
+    font-style: normal;
     width: 75vw;
     max-width: 600px;
     padding-top: 0.5rem;
-    font-style: normal;
     word-spacing: -0.08rem;
     text-align: center;
 }
@@ -168,18 +172,19 @@ body {
     width: calc(100vw - 10.0rem);
     max-width: 600px;
     text-align: left;
-    font-size: calc(0.9rem + 0.5vh);
-    font-weight: 100;
+    font-size: calc(1.0rem + 0.5vh);
+    font-weight: 400;
     color: var(--primary);
     border-left: 0.5rem solid var(--base);
     padding-left: 1.0rem;
     padding-right: 2.0rem;
     transition: 0.2s all ease-in-out;
     text-align: left;
-/*    text-justify: inter-character; */
 }  
 .show-text a {
+    text-decoration: none;
     color: var(--primary);
+    border-bottom: 1px dotted var(--primary);
 }
 .show-text::after {
     content: "";
