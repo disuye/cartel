@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 :root {
-/*    --brand:rgba(255,255,50,1.0); */
-    --brand: rgba(255,255,255,1.0);
     --highlight: rgba(255,25,75,1.0);
     --base:rgba(78,83,88,1.0);
-    --primary:black;
-    --secondary:white;
+    --primary:rgba(0,0,0,1.0);
+    --secondary:rgba(255,255,255,1.0);
     --transparent: rgba(0,0,0,0);
+    --font-one: "Archivo Narrow", sans-serif;
+    --font-two: "Rethink Sans", sans-serif;
+    --recenter: translate(-50%, -50%) rotateZ(0deg);
 }
 body {
     width: 100vw;
@@ -19,8 +20,8 @@ body {
     height: 100vh;
     margin: 0; 
     padding: 0; 
-    font-family: "Archivo Narrow", sans-serif;
-    color: white !important;
+    font-family: var(--font-one);
+    color: var(--secondary) !important;
     background-color: var(--base);
     text-align: center; 
     font-size: 12px !important;
@@ -68,7 +69,7 @@ body {
     background-color: rgba(0, 0, 0, 0.25);
     font-size: 0.8rem;
     font-weight: 600;
-    font-family: "Rethink Sans", sans-serif;
+    font-family: var(--font-two);
     text-transform: uppercase;
     transition: 0.3s all ease-in-out;
 }
@@ -82,7 +83,7 @@ body {
     display: block; 
     position: absolute; 
     top: 50%; left: calc(50% - 0.5rem);
-    transform: translate(-50%,-50%) rotateZ(0deg);
+    transform: var(--recenter);
     cursor: default;
     background-color: transparent;
 }
@@ -106,14 +107,14 @@ body {
     display: block;
     opacity: 0.0;
     left: 50%; top: 50%; 
-    transform: translate(-50%, -50%) rotateZ(0deg);
+    transform: var(--recenter);
     border-radius: 0.2rem;
     max-width: calc(100vw - 6.0rem);
     max-height: calc(100vh - 16.0rem);
     min-height: 135px;
     position: fixed; 
     transition: 0.3s all ease-in-out;
-    background: var(--brand);
+    background: var(--secondary);
     padding: 2.0rem;
     z-index: 10;
     overflow-y: auto;
@@ -148,7 +149,7 @@ body {
     display: block;
     position: fixed;
     left: 50%; top: 50%; 
-    transform: translate(-50%, -50%) rotateZ(0deg);
+    transform: var(--recenter);
     z-index: -1;
     background-size: cover;
     background-position: center;
@@ -160,11 +161,6 @@ body {
     -o-filter: invert(1);
     -ms-filter: invert(1);
     filter: invert(1); */
-}
-object {
-    font-family: "Archivo Narrow", sans-serif;
-    width: 100%;
-    margin-left: -0.5rem;
 }
 .show-text {
     display: block;
@@ -237,7 +233,7 @@ object {
     background: rgba(0, 0, 0, 0.25);
 }
 h1 {
-    font-family: "Rethink Sans", sans-serif;
+    font-family: var(--font-two);
     font-weight: 800;
     color: var(--base);
     padding: 0;
@@ -254,7 +250,7 @@ h1 {
     position: fixed;
     z-index: 10;
     bottom: 0;
-    background: var(--brand);
+    background: var(--secondary);
     text-align: center;
     padding: 2.0rem;
 }
