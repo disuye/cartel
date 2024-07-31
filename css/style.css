@@ -169,6 +169,11 @@ body {
     -ms-filter: invert(1);
     filter: invert(1); */
 }
+p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
 .show-text {
     display: block;
     position: relative;
@@ -203,8 +208,8 @@ body {
 }
 .show-product {
     display: block;
-    padding-top: 1.0rem;
     margin-left: -1.0rem;
+    padding-bottom: 1.5rem;
 }
 .show-product a {
     opacity: 1.0;
@@ -244,8 +249,10 @@ body {
     vertical-align: text-top;
     padding: 1.0rem 1.0rem 1.0rem 1.0rem;
 }
-.product-info span {
+.product-info p {
     font-size: 1.0rem;
+    padding: 0; margin: 0;
+    padding-top: 1.0rem;
 }
 #show-bg {
     display: block;
