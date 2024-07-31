@@ -271,11 +271,11 @@ s {
 }
 #about-show #show-bg {
     background-image: url(/img/cars/e30/E30-320is-00.jpg);
-    background-position: -20%;
+    background-position: 0% 70%;
 }
 #shop-show #show-bg {
     background-image: url(../img/stills/s14b20.jpg);
-    background-position: -20%;
+    background-position: 0% 20%;
 }
 #cartel500-show #show-bg {
     background-image: url(../img/stills/dogleg.jpg);
