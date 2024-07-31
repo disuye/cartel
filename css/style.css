@@ -63,7 +63,7 @@ body {
     position: fixed;
     top: 0;
     padding: 0.0rem;
-    z-index: 200;
+    z-index: 2;
 }
 .header a {
     float: left;
@@ -72,7 +72,7 @@ body {
     color: var(--secondary);
     background-color: rgba(0, 0, 0, 0.25);
     font-size: 0.8rem;
-    font-weight: 800;
+    font-weight: 700;
     font-family: var(--font-two);
     text-transform: uppercase;
     transition: 0.3s all ease-in-out;
@@ -279,10 +279,10 @@ p {
 #contact-show #show-bg {
     background-image: url(../img/stills/m3speedo.jpg);
 }   
-.close, .close::after {
+.close {
     display: block;
     position: fixed;
-    z-index: 1000;
+    z-index: 9999;
     right: 0;
     top: 0;
     float: right;
@@ -290,8 +290,13 @@ p {
     text-decoration: none;
     font-size: 1.0rem;
     padding: 0.4rem 0.6rem;
-    content: "\2715";
     background: rgba(0, 0, 0, 0.25);
+}
+.close::after {
+    content: "\2715";
+}
+.close:hover {
+    background: rgba(0, 0, 0, 0.12);
 }
 h1 {
     font-family: var(--font-two);
@@ -306,14 +311,15 @@ h1 {
     text-transform: uppercase;
 }  
 .footer {
-    display: none;
-    width: calc(100vw - 4.0rem + 2px);
+    display: block;
+    width: 100vw;
     position: fixed;
-    z-index: 10;
+    color: var(--secondary);
+    z-index: 0;
     bottom: 0;
-    background: var(--secondary);
+    background: rgba(0, 0, 0, 0.25);
     text-align: center;
-    padding: 2.0rem;
+    padding: 0.5rem;
 }
 @media (max-aspect-ratio: 1/1.4) 
 and (orientation: portrait)
