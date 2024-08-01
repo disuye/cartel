@@ -112,7 +112,8 @@ body {
 .centerblock {
     display: block; 
     position: absolute; 
-    top: 50%; left: calc(50% - 0.5rem);
+    top: calc(50vh); 
+    left: calc(50vw - 0.5rem); /* center minus body border-left */
     transform: var(--recenter);
     cursor: default;
     background-color: transparent;
