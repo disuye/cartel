@@ -76,7 +76,7 @@ body {
     position: absolute;
     display: block;
     top: 0;
-    background-image: url(../img/figures/06.png); /* /stills/s14b20.jpg */       
+    background-image: url(../img/stills/road.jpg); /* /stills/s14b20.jpg */       
     background-position: center;
     background-size: cover;
     cursor: default;
@@ -297,12 +297,12 @@ s {
     transition: 0.2s all ease-in-out;
 }
 #about-show #show-bg {
-    background-image: url(/img/cars/e30/E30-320is-00.jpg);
-    background-position: 0% 70%;
-}
-#shop-show #show-bg {
     background-image: url(../img/stills/s14b20.jpg);
     background-position: 0% 20%;
+}
+#shop-show #show-bg {
+    background-image: url(/img/cars/e30/E30-320is-00.jpg);
+    background-position: 0% 70%;
 }
 #cartel500-show #show-bg {
     background-image: url(../img/stills/dogleg.jpg);
