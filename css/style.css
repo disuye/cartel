@@ -14,7 +14,7 @@
     --font-two: "Rethink Sans", sans-serif;
     --font-three: "Archivo Narrow", sans-serif;
     --recenter: translate(-50%, -50%) rotateZ(0deg);
-    --fade: fadeIn 2s;
+    --fade: fadeIn 3.0s;
 }
 @keyframes fadeIn {
     0% {opacity: 0;}
@@ -47,7 +47,7 @@ body {
     padding: 0; 
     font-family: var(--font-one);
     color: var(--secondary) !important;
-    background-color: var(--base);
+    background-color: var(--primary);
     text-align: center; 
     font-size: 12px !important;
     line-height: calc(1.2rem 0.5vw);
@@ -72,10 +72,11 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: 0;
-    opacity: 0.25;
+    opacity: 0.45;
     position: absolute;
     display: block;
     top: 0;
+    background-color: var(--base);
     background-image: url(../img/stills/road.jpg); /* /stills/s14b20.jpg */       
     background-position: center;
     background-size: cover;
@@ -297,18 +298,17 @@ s {
     transition: 0.2s all ease-in-out;
 }
 #about-show #show-bg {
-    background-image: url(../img/stills/s14b20.jpg);
-    background-position: 0% 20%;
+    background-image: url(/img/stills/mtech2.jpg);
 }
 #shop-show #show-bg {
-    background-image: url(/img/cars/e30/E30-320is-00.jpg);
-    background-position: 0% 70%;
+    background-image: url(../img/stills/m3speedo.jpg);
 }
 #cartel500-show #show-bg {
     background-image: url(../img/stills/dogleg.jpg);
 }
 #contact-show #show-bg {
-    background-image: url(../img/stills/m3speedo.jpg);
+    background-image: url(../img/stills/s14b20.jpg);
+    background-position: 0% 20%;
 }   
 .close {
     display: block;
