@@ -384,6 +384,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
     #contact-show {
         min-height: 270px;
     }
+    h1 {
+        font-size: 3.1rem;
+    } 
 }
 @media (min-width: 1600px) 
 and (orientation: landscape) {
@@ -395,7 +398,6 @@ and (orientation: landscape) {
     h1 {
         margin: 0vw 5vw;
         margin-top: -2.7rem;
-        font-size: 3.1rem;
     } 
 }
 /** HIDE SCROLL BARS **/
