@@ -80,8 +80,8 @@ body {
     background-position: center;
     background-size: cover;
     cursor: default;
-    -webkit-filter: grayscale(0.5);
-    filter: grayscale(0.5);
+    -webkit-filter: grayscale(1.0);
+    filter: grayscale(1.0);
 }
 #bd {
     content: "";
