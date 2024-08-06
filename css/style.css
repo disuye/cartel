@@ -402,6 +402,7 @@ and (orientation: landscape) {
         margin: 0vw 5vw;
     } 
 }
+/*
 @media only screen 
 and (pointer: coarse) 
 and (min-width: 320px) 
@@ -416,7 +417,7 @@ and (orientation: landscape) {
       top: 100%;
       left: 0;
     }
-  }
+  }*/ 
 /** HIDE SCROLL BARS **/
 * {
     overflow: auto;
