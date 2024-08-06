@@ -13,6 +13,7 @@
     --font-one: "Barlow Condensed", sans-serif;
     --font-two: "Rethink Sans", sans-serif;
     --font-three: "Archivo Narrow", sans-serif;
+    --font-four: "Liberal", sans-serif;
     --recenter: translate(-50%, -50%) rotateZ(0deg);
     --fade: fadeIn 3.0s;
 }
@@ -346,7 +347,7 @@ s {
 }
 h1 {
     font-family: var(--font-one);
-    font-weight: 400;
+    font-weight: 300;
     padding: 0;
     margin: 0;
     margin-top: -2.7rem;
