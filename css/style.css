@@ -400,7 +400,6 @@ and (orientation: landscape) {
     }
     h1 {
         margin: 0vw 5vw;
-        margin-top: -2.7rem;
     } 
 }
 @media only screen 
