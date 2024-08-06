@@ -137,10 +137,11 @@ body {
     max-width: 300px !important;
 }
 .message {
-    display: none;
-    font-family: var(--font-three) ;
-    font-weight: 200;
-    font-size: 1.4rem;
+    display: block;
+    font-family: var(--font-four);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
     font-style: normal;
     width: 75vw;
     max-width: 600px;
