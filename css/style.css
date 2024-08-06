@@ -12,7 +12,7 @@
     --transparent: rgba(0,0,0,0);
     --font-one: "Barlow Condensed", sans-serif;
     --font-two: "Rethink Sans", sans-serif;
-    --font-three: "Archivo Narrow", sans-serif;
+    --font-three: "D-Din", sans-serif;
     --font-four: "Liberal", sans-serif;
     --recenter: translate(-50%, -50%) rotateZ(0deg);
     --fade: fadeIn 3.0s;
@@ -113,7 +113,7 @@ body {
     background-color: rgba(0, 0, 0, 0.25);
     font-size: 0.8rem;
     font-weight: 700;
-    font-family: var(--font-two);
+    font-family: var(--font-three);
     text-transform: uppercase;
     transition: 0.3s all ease-in-out;
 }
@@ -346,14 +346,14 @@ s {
     background: rgba(0, 0, 0, 0.12);
 }
 h1 {
-    font-family: var(--font-one);
-    font-weight: 300;
+    font-family: var(--font-three);
+    font-weight: 600;
     padding: 0;
     margin: 0;
-    margin-top: -2.7rem;
+    margin-top: -1.8rem;
     text-align: left;
     position: relative;
-    left: -1.0rem;
+    left: -1.1rem;
     font-size: 6.2rem;
     text-transform: uppercase;
     letter-spacing: -0.2rem;
@@ -387,7 +387,8 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
         min-height: 270px;
     }
     h1 {
-        font-size: 4.1rem;
+        font-size: 4.4rem;
+        left: -0.8rem;
     } 
 }
 @media (min-width: 1600px) 
