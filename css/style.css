@@ -253,6 +253,10 @@ s {
     background-color: var(--base);
     background: linear-gradient(90deg, var(--base) 15%, var(--transparent) 95%);
 }
+.show-image {
+    width: 70%;
+    margin: 0.0rem 15% 1.2rem 15%;
+}
 .show-product {
     display: none;
     margin-left: -1.0rem;
