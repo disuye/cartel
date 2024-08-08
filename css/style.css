@@ -388,7 +388,7 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
     #shop-show,
     #cartel500-show, 
     #contact-show {
-        min-height: 270px;
+        min-height: 200px;
     }
     h1 {
         font-size: 4.4rem;
