@@ -320,11 +320,12 @@ s {
     background-image: url(../img/stills/dogleg.jpg);
 }
 #cartel500-show #show-bg {
-    background-image: url(../img/stills/m3tacho.jpg);
-    background-position: 0% 50%;
+    background-image: url(/img/cars/e30/E30-320is-01.jpg);
+    background-position: 0% 66%;
 }
 #contact-show #show-bg {
-    background-image: url(/img/stills/mtech2.jpg);
+    background-image: url(../img/stills/m3tacho.jpg);
+    background-position: 0% 50%;
 }   
 #shop-show #show-bg {
     background-image: url(../img/stills/s14b20.jpg);
