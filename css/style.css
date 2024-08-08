@@ -157,7 +157,7 @@ body {
     opacity: 0.0;
     left: 50%; top: 50%; 
     transform: var(--recenter);
-    border-radius: 0.2rem;
+/*    border-radius: 0.2rem; */
     max-width: calc(100vw - 6.0rem);
     max-height: calc(100vh - 16.0rem);
     min-height: 135px;
@@ -310,7 +310,7 @@ s {
     top:-2.0rem; left:-2.0rem;
     width: calc(100% + 6.0rem);
     margin-bottom: -1.5rem;
-    min-height: 33vh;
+    min-height: 25vh;
     background-size: 100%;
     background-position: center;
     transition: 0.2s all ease-in-out;
