@@ -225,7 +225,7 @@ s {
     display: block;
     position: relative;
     width: calc(100vw - 10.0rem);
-    max-width: 600px;
+    max-width: 900px;
     text-align: left;
     font-size: calc(1.0rem + 0.5vh);
     font-weight: 400;
@@ -401,7 +401,7 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
 @media (min-width: 1600px) 
 and (orientation: landscape) {
     .show-text {
-        max-width: 35vw;
+        width: calc(100vw - 10.0rem);
         margin: 0vw 5vw;
         transition: 0.2s all ease-in-out;
     }
