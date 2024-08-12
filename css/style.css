@@ -126,8 +126,8 @@ body {
 .centerblock {
     display: block; 
     position: absolute; 
-    top: 50vh; 
-    left: 50vw;
+    top: 50%; 
+    left: 50%;
     transform: var(--recenter);
     cursor: default;
     background-color: transparent;
