@@ -258,6 +258,11 @@ s {
     background-color: var(--base);
     background: linear-gradient(90deg, var(--base) 15%, var(--transparent) 95%);
 }
+.show-one-image,
+.show-two-image,
+.show-three-image {
+    background-color: rgba(0, 0, 0, 0.06);
+}
 .show-one-image {
     width: 80%;
     margin: 0.0rem 15% 1.2rem 10%;
@@ -329,11 +334,13 @@ s {
     top:-2.0rem; left:-2.0rem;
     width: calc(100% + 6.0rem);
     margin-bottom: -1.5rem;
-    min-height: 25vh;
+    min-height: 22vh;
     background-size: 100%;
     background-position: center;
     transition: 0.2s all ease-in-out;
     box-shadow: inset 0px -3.0rem 3.0rem rgba(0,0,0,0.4);
+    background-repeat: no-repeat;
+    background-color: black;
 }
 #about-show #show-bg {
     background-image: url(../img/stills/dogleg.jpg);
@@ -349,6 +356,20 @@ s {
 #shop-show #show-bg {
     background-image: url(../img/stills/s14b20.jpg);
     background-position: 0% 20%;
+}
+#show-bg::after {
+    content: "";
+    padding: 0; margin :0;
+    background: url(../img/logos/cartel.png) no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-color: rgba(0,0,0,0.06);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%; left: calc(50% - 1.0rem);
+    transform: var(--recenter);
+    transition: 0.2s all ease-in-out;
 }
 .close {
     display: block;
@@ -402,6 +423,10 @@ and */ (max-width: 500px) /*
 and (-webkit-min-device-pixel-ratio: 2) */ {
     .show-text {
         font-size: calc(0.8rem + 1.0vh);
+        transition: 0.2s all ease-in-out;
+    }
+    #show-bg::after {
+        background-size: 33%;
         transition: 0.2s all ease-in-out;
     }
     #about-show, 
