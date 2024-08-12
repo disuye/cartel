@@ -217,6 +217,11 @@ p {
     margin: 0;
     margin-bottom: 1.5rem;
 }
+.center {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
 s {
     text-decoration: none;
     background: linear-gradient(0deg, transparent 30%, currentColor 35%, currentColor 37%, transparent 42%);
