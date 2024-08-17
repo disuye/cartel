@@ -362,7 +362,7 @@ s {
     content: "";
     padding: 0; margin :0;
     background: url(../img/logos/cartel.png) no-repeat;
-    background-size: 50%;
+    background-size: calc(50% - 4.0rem);
     background-position: center;
     background-color: rgba(0,0,0,0.06);
     height: 100%;
@@ -404,22 +404,32 @@ h1 {
     text-transform: uppercase;
     letter-spacing: -0.2rem;
     color: var(--base);
+    text-shadow: -0.15rem -0.15rem rgba(0, 0, 0, 0.12);
 /*    -webkit-text-stroke: 0.5px var(--base); */
     transition: 0.2s all ease-in-out;
 }  
 h3 {
     font-family: var(--font-one);
     font-weight: 400;
-    font-size: 2.3rem;
+    font-size: 3.3rem;
     font-style: italic;
     line-height: 80%;
     overflow: visible;
     display: block;
-    width: 60%;
-    margin: 0 20% 1.0rem 20%;
-    padding-bottom: 1.0rem;
+    width: 80%;
+    max-width: 350px;
+    margin: 0.5rem auto 2.0rem auto;
+    padding: 0.5rem;
     text-align: center;
     transition: 0.2s all ease-in-out;
+    text-shadow: -0.15rem -0.15rem rgba(0, 0, 0, 0.12);
+    color: var(--base);
+/*    transform: rotateZ(-7deg); */
+    -moz-transform: rotateZ(-7deg) skew(-12deg, 0deg);
+    -webkit-transform: rotateZ(-7deg) skew(-12deg, 0deg);
+    -o-transform: rotateZ(-7deg) skew(-12deg, 0deg);
+    -ms-transform: rotateZ(-7deg) skew(-12deg, 0deg);
+    transform: rotateZ(-7deg) skew(-12deg, 0deg);
 }
 u {
     font-style: normal;
@@ -433,6 +443,7 @@ ul {
 }
 li {
     margin-bottom: 0.5rem;
+    max-width: 600px;
 }
 li:before {
     content: "\2022";
