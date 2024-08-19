@@ -338,6 +338,7 @@ s {
 #about-show #show-bg {
     background-image: url(/img/cars/e30/E30-320is-01.jpg);
     background-position: 0% 66%;
+    background-size: 110%;
 }
 #cartel500-show #show-bg {
     background-image: url(../img/stills/dogleg.jpg);
@@ -411,7 +412,11 @@ h1 {
     width: fit-content;
     overflow: visible;
     font-weight: 400;
-    margin: 2.0rem auto;
+    text-decoration: underline;
+    text-decoration-thickness: 0.15rem;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 0.4rem;;
+    margin: 1.0rem auto 2.0rem auto;
     text-align: left;
     position: relative;
     left: -0.5rem;
@@ -454,12 +459,12 @@ and (orientation: portrait)
 and */ (max-width: 500px) /*
 and (-webkit-min-device-pixel-ratio: 2) */ {
     .show-text {
-        font-size: calc(0.8rem + 1.0vh);
+        font-size: 1.2rem;
         transition: 0.2s all ease-in-out;
+        padding:0;
+        border: 0;
     }
     h3 {
-        margin-left: 0;
-        margin-right: 0;
         font-size: 2.0rem;
     }
     #show-bg::after {
