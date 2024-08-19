@@ -236,8 +236,9 @@ s {
     font-weight: 400;
     color: var(--primary);
     border-left: 0.44rem solid var(--base);
-    padding-left: 1.0rem;
-    padding-right: 2.0rem;
+    padding-left: 3.0rem;
+    padding-right: 4.0rem;
+    padding-top: 1.0rem;
     transition: 0.2s all ease-in-out;
     text-align: left;
 }  
@@ -252,8 +253,8 @@ s {
     text-align: center;
     width: 90%;
     height: 0.45rem;
-    margin-top: 2.1rem;
-    margin-left: -1.0rem;
+    margin-top: 3.1rem;
+    margin-left: -3.0rem; /* must equal .show-text {padding-left:} */
     padding-right: 2.0rem;
     background-color: var(--base);
     background: linear-gradient(90deg, var(--base) 15%, var(--transparent) 95%);
