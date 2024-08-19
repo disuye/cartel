@@ -150,12 +150,13 @@ body {
 #cartel500-show, 
 #contact-show {
     display: block;
+    visibility: hidden;
     opacity: 0.0;
     left: 50%; top: 50%; 
     transform: var(--recenter);
     border-radius: 0.4rem;
     max-width: calc(100vw - 6.0rem);
-    max-height: calc(100vh - 16.0rem);
+    max-height: calc(100vh - 8.0rem);
     min-height: 135px;
     position: fixed; 
     transition: 0.3s all ease-in-out;
@@ -170,6 +171,7 @@ body {
 #shop-show:target,
 #cartel500-show:target, 
 #contact-show:target {
+    visibility: visible;
     opacity: 1.0;
     transition: 0.3s all ease-in-out;
     z-index: 100;
@@ -327,7 +329,7 @@ s {
     top:-2.0rem; left:-2.0rem;
     width: calc(100% + 6.0rem);
     margin-bottom: -1.5rem;
-    min-height: 22vh;
+    min-height: calc(10vh + 6rem);
     background-size: 100%;
     background-position: center;
     transition: 0.2s all ease-in-out;
@@ -341,21 +343,27 @@ s {
     background-size: 110%;
 }
 #cartel500-show #show-bg {
-    background-image: url(../img/stills/dogleg.jpg);
+    background-image: url(../img/stills/m3tacho.jpg);
+    background-position: 0% 22%;
 }
 #contact-show #show-bg {
-    background-image: url(../img/stills/m3tacho.jpg);
+    background-image: url(../img/stills/road.jpg);
     background-position: 0% 50%;
 }   
 #shop-show #show-bg {
     background-image: url(../img/stills/s14b20.jpg);
-    background-position: 0% 20%;
+    background-position: 0% 8%;
 }
 #show-bg::after {
     content: "";
     padding: 0; margin :0;
     background: url(../img/logos/cartel.png) no-repeat;
-    background-size: calc(50% - 4.0rem);
+    -moz-filter: drop-shadow(0 -0.06rem 0.3rem rgba(0,0,0,1.0));
+    -webkit-filter: drop-shadow(0 -0.06rem 0.3rem rgba(0,0,0,1.0));    
+    -o-filter: drop-shadow(0 -0.06rem 0.3rem rgba(0,0,0,1.0));
+    -ms-filter: drop-shadow(0 -0.06rem 0.3rem rgba(0,0,0,1.0));
+    filter: drop-shadow(0 -0.06rem 0.5rem rgba(0,0,0,1.0));
+    background-size: calc(25% - 4.0rem);
     background-position: center;
     background-color: rgba(0,0,0,0.06);
     height: 100%;
@@ -411,11 +419,11 @@ h1 {
     padding: 0;
     width: fit-content;
     overflow: visible;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: underline;
     text-decoration-thickness: 0.15rem;
     text-decoration-skip-ink: auto;
-    text-underline-offset: 0.4rem;;
+    text-underline-offset: 0.4rem;
     margin: 1.0rem auto 2.0rem auto;
     text-align: left;
     position: relative;
@@ -467,8 +475,11 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
     h3 {
         font-size: 2.0rem;
     }
+    #show-bg {
+        min-height: calc(10rem);
+    }
     #show-bg::after {
-        background-size: 33%;
+        background-size: 45%;
         transition: 0.2s all ease-in-out;
     }
     #about-show, 
