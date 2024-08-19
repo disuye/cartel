@@ -392,22 +392,6 @@ s {
 .close:hover {
     background: rgba(0, 0, 0, 0.12);
 }
-/* h1 {
-    font-family: var(--font-three);
-    font-weight: 600;
-    padding: 0;
-    margin: 0;
-    margin-top: -1.8rem;
-    text-align: left;
-    position: relative;
-    left: -1.2rem;
-    font-size: 6.2rem;
-    text-transform: uppercase;
-    letter-spacing: -0.2rem;
-    color: var(--base);
-    text-shadow: -0.15rem -0.15rem rgba(0, 0, 0, 0.12);
-    transition: 0.2s all ease-in-out;
-}  */
 h3, h1 {
     font-family: var(--font-one);
     font-weight: 400;
@@ -431,13 +415,11 @@ h3, h1 {
     transform: rotateZ(-7deg) skew(-12deg, 0deg);
 }
 h1 {
-    background-color: rgba(255,0,0,0.3);
     transform-origin: center;
     padding: 0;
     width: fit-content;
     overflow: visible;
     font-weight: 400;
-/*    margin: 1.5rem 0rem 2.5rem 0rem; */
     margin: 2.0rem auto;
     text-align: left;
     position: relative;
@@ -483,6 +465,11 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
     .show-text {
         font-size: calc(0.8rem + 1.0vh);
         transition: 0.2s all ease-in-out;
+    }
+    h3 {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 2.0rem;
     }
     #show-bg::after {
         background-size: 33%;
