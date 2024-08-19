@@ -156,7 +156,8 @@ body {
     transform: var(--recenter);
     border-radius: 0.4rem;
     max-width: calc(100vw - 6.0rem);
-    max-height: calc(100vh - 8.0rem);
+    height: fit-content;
+    max-height: calc(100% - 10.0rem);
     min-height: 135px;
     position: fixed; 
     transition: 0.3s all ease-in-out;
