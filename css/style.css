@@ -345,11 +345,11 @@ s {
     background-color: black;
 }
 #about-show #show-bg {
-    background-image: url(../img/stills/dogleg.jpg);
-}
-#cartel500-show #show-bg {
     background-image: url(/img/cars/e30/E30-320is-01.jpg);
     background-position: 0% 66%;
+}
+#cartel500-show #show-bg {
+    background-image: url(../img/stills/dogleg.jpg);
 }
 #contact-show #show-bg {
     background-image: url(../img/stills/m3tacho.jpg);
