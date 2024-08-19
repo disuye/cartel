@@ -392,7 +392,7 @@ s {
 .close:hover {
     background: rgba(0, 0, 0, 0.12);
 }
-h1 {
+/* h1 {
     font-family: var(--font-three);
     font-weight: 600;
     padding: 0;
@@ -406,10 +406,9 @@ h1 {
     letter-spacing: -0.2rem;
     color: var(--base);
     text-shadow: -0.15rem -0.15rem rgba(0, 0, 0, 0.12);
-/*    -webkit-text-stroke: 0.5px var(--base); */
     transition: 0.2s all ease-in-out;
-}  
-h3 {
+}  */
+h3, h1 {
     font-family: var(--font-one);
     font-weight: 400;
     font-size: 3.3rem;
@@ -425,12 +424,28 @@ h3 {
     transition: 0.2s all ease-in-out;
     text-shadow: -0.15rem -0.15rem rgba(0, 0, 0, 0.12);
     color: var(--base);
-/*    transform: rotateZ(-7deg); */
     -moz-transform: rotateZ(-7deg) skew(-12deg, 0deg);
     -webkit-transform: rotateZ(-7deg) skew(-12deg, 0deg);
     -o-transform: rotateZ(-7deg) skew(-12deg, 0deg);
     -ms-transform: rotateZ(-7deg) skew(-12deg, 0deg);
     transform: rotateZ(-7deg) skew(-12deg, 0deg);
+}
+h1 {
+    background-color: rgba(255,0,0,0.3);
+    transform-origin: center;
+    padding: 0;
+    width: fit-content;
+    overflow: visible;
+    font-weight: 400;
+/*    margin: 1.5rem 0rem 2.5rem 0rem; */
+    margin: 2.0rem auto;
+    text-align: left;
+    position: relative;
+    left: -0.5rem;
+    font-size: 6.2rem;
+    text-transform: uppercase;
+    letter-spacing: -0.2rem;
+    color: var(--base);    
 }
 u {
     font-style: normal;
@@ -491,9 +506,6 @@ and (orientation: landscape) {
         margin: 0vw 5vw;
         transition: 0.2s all ease-in-out;
     }
-    h1 {
-        margin: 0vw 5vw;
-    } 
 }
 /*
 @media only screen 
