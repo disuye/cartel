@@ -212,7 +212,8 @@ p {
     margin-bottom: 1.5rem;
 }
 .center {
-    width: 100%;
+    width: fit-content;
+    max-width: calc(100vw - 10.0rem);
     margin: 0 auto;
     text-align: center;
 }
