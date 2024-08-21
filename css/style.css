@@ -367,7 +367,7 @@ s {
     filter: drop-shadow(0 -0.06rem 0.5rem rgba(0,0,0,1.0));
     background-size: calc(25% - 4.0rem);
     background-position: center;
-    background-color: rgba(0,0,0,0.06);
+    background-color: rgba(0,128,128,0.06);
     height: 100%;
     width: 100%;
     position: absolute;
