@@ -60,6 +60,7 @@ body {
 #cartel500-show, 
 #shop-show,
 #contact-show,
+#carhotel-show,
 .show-text {
     min-width: 270px !important;
     min-height: 4.0rem;  
@@ -148,7 +149,8 @@ body {
 #about-show, 
 #shop-show,
 #cartel500-show, 
-#contact-show {
+#contact-show,
+#carhotel-show {
     display: block;
     visibility: hidden;
     opacity: 0.0;
@@ -171,7 +173,8 @@ body {
 #about-show:target, 
 #shop-show:target,
 #cartel500-show:target, 
-#contact-show:target {
+#contact-show:target,
+#carhotel-show:target {
     visibility: visible;
     opacity: 1.0;
     transition: 0.3s all ease-in-out;
@@ -189,10 +192,14 @@ body {
 #contact-show:before {
     background-image: url(../img/figures/07.png);
 }
+#carhotel-show::before {
+    background-image: url(../img/figures/06.png);
+}
 #about-show::before,
 #shop-show::before,
 #cartel500-show::before,
-#contact-show::before {
+#contact-show::before,
+#carhotel-show::before {
     content: "";
     display: block;
     position: fixed;
@@ -278,7 +285,7 @@ s {
     margin: 0.0rem 0% 1.2rem calc(5% - 1.0rem);
  }
 .show-product {
-    display: none;
+    display: block;
     margin-left: -1.0rem;
     padding-bottom: 1.0rem;
 }
@@ -354,6 +361,10 @@ s {
 #shop-show #show-bg {
     background-image: url(../img/stills/s14b20.jpg);
     background-position: 0% 8%;
+}
+#carhotel-show #show-bg {
+    background-image: url(../img/stills/dogleg.jpg);
+    background-position: center;
 }
 #show-bg::after {
     content: "";
