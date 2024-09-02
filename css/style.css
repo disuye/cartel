@@ -285,7 +285,7 @@ s {
     margin: 0.0rem 0% 1.2rem calc(5% - 1.0rem);
  }
 .show-product {
-    display: block;
+    display: none;
     margin-left: -1.0rem;
     padding-bottom: 1.0rem;
 }
@@ -351,8 +351,8 @@ s {
     background-size: 110%;
 }
 #cartel500-show #show-bg {
-    background-image: url(../img/stills/m3tacho.jpg);
-    background-position: 0% 22%;
+    background-image: url(../img/random/oldPTmap.jpg);
+    background-position: 0% 95%;
 }
 #contact-show #show-bg {
     background-image: url(../img/stills/road.jpg);
