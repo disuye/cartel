@@ -363,8 +363,8 @@ s {
     background-position: 0% 8%;
 }
 #concierge-show #show-bg {
-    background-image: url(../img/stills/dogleg.jpg);
-    background-position: center;
+    background-image: url(../img/stills/m3tacho.jpg);
+    background-position: 0% 22%;
 }
 #show-bg::after {
     content: "";
