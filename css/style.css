@@ -346,7 +346,7 @@ s {
     background-color: black;
 }
 #about-show #show-bg {
-    background-image: url(/img/cars/e30/E30-320is-01.jpg);
+    background-image: url(../img/cars/e30/E30-320is-01.jpg);
     background-position: 0% 66%;
     background-size: 110%;
 }
