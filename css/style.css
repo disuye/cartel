@@ -404,12 +404,15 @@ s {
 .close:hover {
     background: rgba(0, 0, 0, 0.12);
 }
-h3, h1 {
+h5, h3, h1 {
     font-family: var(--font-one);
-    font-weight: 400;
-    font-size: 3.3rem;
     font-style: italic;
+    color: var(--primary);
     line-height: 80%;
+    transition: 0.2s all ease-in-out;
+    text-shadow: -0.15rem -0.15rem rgba(0, 0, 0, 0.12);
+}
+h3, h1 {    
     overflow: visible;
     display: block;
     width: 80%;
@@ -417,9 +420,6 @@ h3, h1 {
     margin: 0.5rem auto 2.0rem auto;
     padding: 0.5rem;
     text-align: center;
-    transition: 0.2s all ease-in-out;
-    text-shadow: -0.15rem -0.15rem rgba(0, 0, 0, 0.12);
-    color: var(--base);
     -moz-transform: rotateZ(-7deg) skew(-10deg, 0deg);
     -webkit-transform: rotateZ(-7deg) skew(-10deg, 0deg);
     -o-transform: rotateZ(-7deg) skew(-10deg, 0deg);
@@ -444,6 +444,10 @@ h1 {
     text-transform: uppercase;
     letter-spacing: -0.2rem;
     color: var(--base);    
+}
+h3 {
+    font-size: 3.3rem;
+    font-weight: 400;
 }
 h5 {
     font-family: var(--font-one);
@@ -494,9 +498,6 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
         padding:0;
         border: 0;
     }
-    h3 {
-        font-size: 2.0rem;
-    }
     #show-bg {
         min-height: calc(10rem);
     }
@@ -513,6 +514,12 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
     h1 {
         font-size: 4.4rem;
         left: -0.8rem;
+    }
+    h3 {
+        font-size: 2.2rem;
+    }
+    h5 {
+        font-size: 1.6rem;
     } 
 }
 @media (min-width: 1600px) 
