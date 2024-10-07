@@ -60,7 +60,7 @@ body {
 #cartel500-show, 
 #shop-show,
 #contact-show,
-#concierge-show,
+#services-show,
 .show-text {
     min-width: 270px !important;
     min-height: 4.0rem;  
@@ -150,7 +150,7 @@ body {
 #shop-show,
 #cartel500-show, 
 #contact-show,
-#concierge-show {
+#services-show {
     display: block;
     visibility: hidden;
     opacity: 0.0;
@@ -174,7 +174,8 @@ body {
 #shop-show:target,
 #cartel500-show:target, 
 #contact-show:target,
-#concierge-show:target {
+#services-show:target,
+*[id^='services']:target {
     visibility: visible;
     opacity: 1.0;
     transition: 0.3s all ease-in-out;
@@ -192,14 +193,14 @@ body {
 #contact-show:before {
     background-image: url(../img/figures/07.png);
 }
-#concierge-show::before {
+#services-show::before {
     background-image: url(../img/figures/06.png);
 }
 #about-show::before,
 #shop-show::before,
 #cartel500-show::before,
 #contact-show::before,
-#concierge-show::before {
+#services-show::before {
     content: "";
     display: block;
     position: fixed;
@@ -346,15 +347,14 @@ s {
     background-color: black;
 }
 #about-show #show-bg {
-    background-image: url(../img/cars/e30/E30-320is-01.jpg);
-    background-position: 0% 66%;
-    background-size: 110%;
-}
-#cartel500-show #show-bg {
-    background-image: url(../img/random/oldPTmap.jpg);
-    background-position: 0% 95%;
+    background-image: url(../img/cars/e30/E30-320is-02.jpg);
+    background-position: 0% 67%;
 }
 #contact-show #show-bg {
+    background-image: url(../img/stills/mtech2.jpg);
+    background-position: 0% 7%;
+}
+#cartel500-show #show-bg {
     background-image: url(../img/stills/road.jpg);
     background-position: 0% 50%;
 }   
@@ -362,7 +362,7 @@ s {
     background-image: url(../img/stills/s14b20.jpg);
     background-position: 0% 8%;
 }
-#concierge-show #show-bg {
+#services-show #show-bg {
     background-image: url(../img/stills/m3tacho.jpg);
     background-position: 0% 22%;
 }
