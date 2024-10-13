@@ -524,7 +524,7 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
         border: 0;
     }
     .button {
-        font-size: 80%;
+        font-size: 70% !important;
     }
     #show-bg {
         min-height: calc(10rem);
