@@ -264,8 +264,7 @@ s {
     box-shadow: inset 0px -0.5rem 0.8rem rgba(0,0,0,0.1);
 }
 .icon {
-    font-size: 92%;
-    vertical-align: top;
+    font-size: 91%;
 }
 .show-text::after {
     content: "";
