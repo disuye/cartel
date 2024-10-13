@@ -48,6 +48,9 @@
 		<h3>Get in touch</h3>
 
 		<p>We will chat cars all day long so feel free to <a href="#contact-show">email us</a>, ask us anything, or just say hello.</p>
+
+		<p class="center"><a href="mailto:info@cartelautomotive.com" class="button" title="Email us...">info@cartelautomotive.com</a>
+			<a title="Copy to Clipboard" onclick="myFunction('info@cartelautomotive.com')" class="button icon">&#10697;</a></p>
 	</div>
 </div>
 
@@ -120,6 +123,9 @@
 		<h3>Get in touch</h3>
 
 		<p>We will chat cars all day long so feel free to <a href="#contact-show">email us</a>, ask us anything, or just say hello.</p>
+
+		<p class="center"><a href="mailto:info@cartelautomotive.com" class="button" title="Email us...">info@cartelautomotive.com</a>
+			<a title="Copy to Clipboard" onclick="myFunction('info@cartelautomotive.com')" class="button icon">&#10697;</a></p>
 		
 	</div>
 </div>
@@ -144,23 +150,24 @@
 	<div id="show-bg"></div>
 	<h1>Contact</h1>
 		<div class="show-text">
-			<p>Need the garage queen prepped tip-top for summer? Need to free up some space at your home garage (for more cars, obviously)? Or you want your weekend thrasher revived for the next bout of abuse... we can help.</p>
+			<p>Need the garage queen prepped for summer? Need to free up space at the home garage? Want your weekend thrasher revived for the next bout of abuse? We can help.</p>
 			
-			<p class="center"><a href="mailto:info@cartelautomotive.com" class="button">info@cartelautomotive.com</a> <a href="#copy-to-clipboard" onclick="myFunction()" class="button">&#10697;</a></p>
+			<p class="center"><a href="mailto:info@cartelautomotive.com" class="button" title="Email us...">info@cartelautomotive.com</a>
+				<a title="Copy to Clipboard" onclick="myFunction('info@cartelautomotive.com')" class="button icon">&#10697;</a></p>
 
-			<script>
-				function myFunction() {
-					var copyText = "info@cartelautomotive.com";
-					navigator.clipboard.writeText(copyText);
-					alert("Email address:" + `\n\n` + copyText + `\n\n` + "Copied to clipboard.");
-				}
-			</script>
-		
-			<p>We're too busy for TikTok, we detest FaceBook, and too lazy to run a YouTube channel... but we just about manage an Instagram page, feel free to connect with us over there:</p>
+			<p>We're too busy for TikTok, we detest FaceBook, and too lazy to run a YouTube channel... but we just about manage Instagram, feel free to connect:</p>
 
-			<p class="center"><a href="https://instagram.com/cartelautomotivo" class="button">Instagram</a></p>
+			<p class="center"><a href="https://instagram.com/cartelautomotivo" class="button" title="Visit our Instagram page...">Instagram</a>
+				<a title="Copy to Clipboard" onclick="myFunction('http://instagram.com/cartelautomotivo')" class="button icon">&#10697;</a></p>
 	</div>
 </div>
+
+<script>
+	function myFunction(copyText) {
+		navigator.clipboard.writeText(copyText);
+		alert('"' + copyText + '"' + `\n\n` + "… has been copied to clipboard.");
+	}
+</script>
 
 <!-- SHOP CONTENT -->
 <div id="shop-show">
