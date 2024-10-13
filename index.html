@@ -146,11 +146,19 @@
 		<div class="show-text">
 			<p>Need the garage queen prepped tip-top for summer? Need to free up some space at your home garage (for more cars, obviously)? Or you want your weekend thrasher revived for the next bout of abuse... we can help.</p>
 			
-			<p><a href="mailto:info@cartelautomotive.com">info@cartelautomotive.com</a></p>
-		
-			<p>We're too busy for TikTok, we detest FaceBook, and too lazy to run a YouTube channel but we can just about manage an Instagram page... So connect with us on there...</p>
+			<p class="center"><a href="mailto:info@cartelautomotive.com" class="button">info@cartelautomotive.com</a> <a href="#copy-to-clipboard" onclick="myFunction()" class="button">&#10697;</a></p>
 
-			<p><a href="https://instagram.com/cartelautomotivo">Instagram</a></p>
+			<script>
+				function myFunction() {
+					var copyText = "info@cartelautomotive.com";
+					navigator.clipboard.writeText(copyText);
+					alert("Email address:" + `\n\n` + copyText + `\n\n` + "Copied to clipboard.");
+				}
+			</script>
+		
+			<p>We're too busy for TikTok, we detest FaceBook, and too lazy to run a YouTube channel... but we just about manage an Instagram page, feel free to connect with us over there:</p>
+
+			<p class="center"><a href="https://instagram.com/cartelautomotivo" class="button">Instagram</a></p>
 	</div>
 </div>
 
