@@ -255,12 +255,13 @@ s {
     width: fit-content;
     border: 1px solid var(--base) !important;
     padding: 0.4rem 0.8rem 0.5rem 0.8rem;
-    background-color: rgba(0, 0, 0, 0.06);
     border-radius: 0.25rem;
     cursor: pointer;
+    box-shadow: inset 0px -0.5rem 0.8rem rgba(0,0,0,0.2);
+    background-color: white;
 }
 .button:hover {
-    background-color: var(--secondary);
+    box-shadow: inset 0px -0.5rem 0.8rem rgba(0,0,0,0.1);
 }
 .icon {
     font-size: 1.17rem;
