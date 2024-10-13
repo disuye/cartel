@@ -239,7 +239,7 @@ s {
     color: var(--primary);
     border-left: 0.44rem solid var(--base);
     padding-left: 3.0rem;
-    padding-right: 4.0rem;
+    padding-right: 3.0rem;
     padding-top: 1.0rem;
     transition: 0.2s all ease-in-out;
     text-align: left;
