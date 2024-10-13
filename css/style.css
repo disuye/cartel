@@ -523,10 +523,6 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
         padding:0;
         border: 0;
     }
-    .button {
-        display: block;
-        width: fit-content;
-    }
     #show-bg {
         min-height: calc(10rem);
     }
