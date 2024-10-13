@@ -545,7 +545,10 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
     }
     h5 {
         font-size: 1.6rem;
-    } 
+    }
+    .button {
+        zoom: 80%;
+    }
 }
 @media (min-width: 1600px) 
 and (orientation: landscape) {
