@@ -373,11 +373,11 @@ s {
 }
 #about-show #show-bg {
     background-image: url(../img/cars/e30/E30-320is-02.jpg);
-    background-position: 0% 67%;
+    background-position: -1.0rem 67%;
 }
 #contact-show #show-bg {
     background-image: url(../img/stills/mtech2.jpg);
-    background-position: 0% 7%;
+    background-position: -1.0rem 7%;
 }
 #cartel500-show #show-bg {
     background-image: url(../img/stills/road.jpg);
@@ -389,7 +389,7 @@ s {
 }
 #services-show #show-bg {
     background-image: url(../img/stills/m3tacho.jpg);
-    background-position: 0% 22%;
+    background-position: -1.0rem 22%;
 }
 #show-bg::after {
     content: "";
