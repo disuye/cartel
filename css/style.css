@@ -69,7 +69,6 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: 0;
-    opacity: 0.45;
     position: absolute;
     display: block;
     top: 0;
@@ -80,6 +79,22 @@ body {
     cursor: default;
     -webkit-filter: grayscale(1.0);
     filter: grayscale(1.0);
+}
+body:has(*[id*='-show']:target) #bg {
+    opacity: 0.6;
+    -webkit-filter: grayscale(0.0);
+    filter: grayscale(0.0);
+    transition-property: filter, -webkit-filter, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function:ease-in-out;
+}
+#bg {
+    opacity: 0.45;
+    -webkit-filter: grayscale(1.0);
+    filter: grayscale(1.0);
+    transition-property: filter, -webkit-filter, opacity;
+    transition-duration: 1.0s;
+    transition-timing-function: ease-in-out;
 }
 #bd {
     content: "";
