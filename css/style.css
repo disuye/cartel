@@ -46,7 +46,7 @@ body {
     background-color: var(--primary);
     text-align: center; 
     font-size: 12px !important;
-    line-height: calc(1.3rem + 0.5vw);
+    line-height: 1.0rem;
     text-rendering: geometricPrecision;
     overflow-x: hidden;
     zoom: 100%;
@@ -111,15 +111,16 @@ body:has(*[id*='-show']:target) #bg {
     width: calc(100vw - 1.0rem);
     position: fixed;
     top: 0;
-    padding: 0.5rem;
+    padding: 0;
     margin: 0;
     z-index: 9998;
     text-align: center;
 }
-.header a {
-    display: inline;
+#menu a, 
+#menu a:active {
+    display: inline-block;
     text-decoration: none; 
-    padding: 0.7rem 0.9em 0.7rem 0.9em;
+    padding: 0.5rem 0.9em 0.5rem 0.9em;
     margin: 0;
     color: var(--secondary);
     background-color: rgba(0, 0, 0, 0.25);
@@ -129,11 +130,16 @@ body:has(*[id*='-show']:target) #bg {
     text-transform: uppercase;
     transition: 0.3s all ease-in-out;
 }
-.header a:hover {
-    padding: 0.7rem 0.9em 0.7rem 0.9em;
+#menu a:hover {
+    padding: 0.5rem 0.9em 0.5rem 0.9em;
     background-color: rgba(0, 0, 0, 0.12);
     color: var(--highlight);
     transition: 0.15s all ease-in-out;
+}
+#hamburger,
+#menu .close {
+    display: none !important;
+    visibility: hidden;
 }
 .centerblock {
     display: block; 
@@ -259,6 +265,7 @@ s {
     padding-top: 1.0rem;
     transition: 0.2s all ease-in-out;
     text-align: left;
+    line-height: calc(1.3rem + 0.5vw);
 }  
 .show-text a {
     text-decoration: none;
@@ -572,6 +579,47 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
     }
     .button {
         zoom: 80%;
+    }
+    /* MOBILE NAVIGATION */
+    .header {
+        width: 100vw;
+    }
+    #hamburger {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1.0;
+    }
+    #menu a,
+    #menu a:active,
+    #menu a:hover {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    #menu {
+        display: block;
+        visibility: visible;
+        position: fixed;
+        top: calc(-10.0rem - 1px); 
+        /* ^^ 1px iOS render glitch */
+        /* -N.Nrem = */
+        right: 0;
+        width: 100vw;
+        transition: 0.3s all ease-in-out;
+    }
+    #menu:target {
+        top: 0.0rem;
+    }
+    #menu:target #hamburger {
+        visibility: hidden;
+        opacity: 0.0;
+    }
+    #menu .close {
+        display: block !important;
+        visibility: visible !important;
+        background-color: transparent !important;
+    }
+    *[id*='-show'] .close {
+        visibility: hidden;
     }
 }
 @media (min-width: 1600px) 
