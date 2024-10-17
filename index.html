@@ -40,12 +40,6 @@
 			<li><a href="#services-show" onClick="anchorFunction('services-workshop')">Maintenance &amp; Repair</a></li>  
 			<li><a href="#services-show" onClick="anchorFunction('services-broker')">Sourcing &amp; Trade Broker</a></li>
 		</ul>
-		<script>
-			// Sub-Anchor Navigation
-			function anchorFunction(goHere) {
-				document.getElementById(goHere).scrollIntoView();
-			}
-		</script>
 
 		<p>TL;DR: We handle the chores, you do the fun stuff.</p>
 		
@@ -174,14 +168,7 @@
 			<p>We are baffled by TikTok, detest FaceBook, and too lazy to run a YouTube channel... but we just about manage Instagram, feel free to connect:</p>
 
 			<p class="center"><a href="https://instagram.com/cartelautomotivo" class="button" title="Visit our Instagram page...">Instagram</a>
-				<a title="Copy to Clipboard" onclick="copyFunction('http://instagram.com/cartelautomotivo')" class="button icon"></a></p>
-			<script>
-				// Copy Email, Link to Clipboard
-				function copyFunction(copyText) {
-					navigator.clipboard.writeText(copyText);
-					alert("Copied to clipboard:" + `\n\n` + copyText);
-				}
-			</script>	
+				<a title="Copy to Clipboard" onclick="copyFunction('http://instagram.com/cartelautomotivo')" class="button icon"></a></p>	
 	</div>
 </div>
 
@@ -224,7 +211,28 @@
 </div>		
 
 <!-- FOOTER -->
-		<div class="footer">©2000-2024 Cartel Automotive</div>
-	
+	<div class="footer">©2000-2024 Cartel Automotive</div>
+
+<!-- SCRIPTS -->
+<script>
+	// Sub-Anchor Navigation, smooth scroll except Safari
+	function anchorFunction(goHere) {
+		if (navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+			   navigator.userAgent &&
+			   navigator.userAgent.indexOf('CriOS') == -1 &&
+			   navigator.userAgent.indexOf('FxiOS') == -1) {
+			document.getElementById(goHere).scrollIntoView();
+		} else {
+			document.getElementById(goHere).scrollIntoView({behavior: 'smooth'});
+		}
+	}
+</script>
+<script>
+	// Copy Email, Link to Clipboard
+	function copyFunction(copyText) {
+		navigator.clipboard.writeText(copyText);
+		alert("Copied to clipboard:" + `\n\n` + copyText);
+	}
+</script>	
 	</body>
 </html>

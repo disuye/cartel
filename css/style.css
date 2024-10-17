@@ -33,10 +33,6 @@
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-/* WOULD LOVE THIS TO WORK, SAFARI BREAKS 
-* {
-    scroll-behavior: smooth;
-} */
 body {
     width: 100vw;
     position: fixed;
