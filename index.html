@@ -36,11 +36,17 @@
 		<p>Cartel is an enthusiast owned &amp; operated automotive space based in southern Portugal. We are passionate about driving – we enjoy all cars – and Cartel exists to provide a number of services:</p>
 		
 		<ul> 
-			<li>Enthusiast Car Storage</li>
-			<li>Maintenance &amp; Repair</li>  
-			<li>Sourcing &amp; Trade Broker</li>
+			<li><a href="#services-show" onClick="anchorFunction('services-storage')">Enthusiast Car Storage</a></li>
+			<li><a href="#services-show" onClick="anchorFunction('services-workshop')">Maintenance &amp; Repair</a></li>  
+			<li><a href="#services-show" onClick="anchorFunction('services-broker')">Sourcing &amp; Trade Broker</a></li>
 		</ul>
-		
+		<script>
+			// Sub-Anchor Navigation
+			function anchorFunction(goHere) {
+				document.getElementById(goHere).scrollIntoView();
+			}
+		</script>
+
 		<p>TL;DR: We handle the chores, you do the fun stuff.</p>
 		
 		<p>Our primary focus is storage however please read the <a href="#services-show">Services</a> page for a full explanation of everything we offer members.</p>
@@ -52,7 +58,7 @@
 		<p>We will chat cars all day long so feel free to <a href="#contact-show">email us</a>, ask us anything, or just say hello.</p>
 
 		<p class="center"><a href="mailto:info@cartelautomotive.com" class="button" title="Email us...">info@cartelautomotive.com</a>
-			<a title="Copy to Clipboard" onclick="myFunction('info@cartelautomotive.com')" class="button icon"></a></p>
+			<a title="Copy to Clipboard" onclick="copyFunction('info@cartelautomotive.com')" class="button icon"></a></p>
 	</div>
 </div>
 
@@ -63,8 +69,16 @@
 	<h1>Services</h1>
 	<div class="show-text">
 		<p>Too many cars? Not enough free time? No space? Cartel Automotive has got you sorted. TL;DR: We handle the chores, you do the fun stuff.</p>
+
+		<ul> 
+			<li><a href="#services-show" onClick="anchorFunction('services-storage')">Enthusiast Car Storage</a></li>
+			<li><a href="#services-show" onClick="anchorFunction('services-workshop')">Maintenance &amp; Repair</a></li>  
+			<li><a href="#services-show" onClick="anchorFunction('services-broker')">Sourcing &amp; Trade Broker</a></li>
+		</ul>
+
+		<p>TL;DR: We handle the chores, you do the fun stuff.</p>
 		
-		<h3 id="services1">Enthusiast Car Storage</h3>
+		<h3 id="services-storage" class="services">Enthusiast Car Storage</h3>
 
 		<p>Our primary focus. An air-conditioned, humidity controlled, secure space with storage for ~60 vehicles. All memberships are bespoke: From basic long-term car storage, to a complete 'Arrive & Drive' package consisting of storage &amp; scheduled servicing and concierge.</p>
 
@@ -86,7 +100,7 @@
 		
 		<p>Also note: We presently do not offer flatbed transportation and delivery. We prefer car owners to source transportation services best suited to their individual needs. We have yet to find a consistently reliable company. We hope to be able to provide transportation services in the future.</p>
 
-		<h3 id="services2">Maintenance &amp; Repair</h3>
+		<h3 id="services-workshop" class="services">Maintenance &amp; Repair</h3>
 
 		<p>Regarding our workshop, our personal scope includes mechanical and electrical servicing of sports &amp; classic cars from the 1980~2000 period. However, leveraging the combined mechanical experience of our members, our garage is equipped to handle just about anything with a combustion engine &amp; wheels.</p>
 
@@ -108,11 +122,11 @@
 		<img src="/img/figures/01.png" class="show-two-image">
 		<img src="/img/stills/s14b20post.jpg" class="show-two-image">
 		
-		<h5 id="services3">Specialist Treatment</h5>
+		<h5>Specialist Treatment</h5>
 
 		<p>All marques catered for but our <i>specific niche</i> is E-series BMWs (if you want to get <i>really</i> specific then our niche is the E30 M3, E30 320is, E34 M5 – the S14 &amp; S38 powered cars – plus we're well into E36/E46 M3 and any flavour of Alpina / Hartge / AC Schnitzer). We've dabbled with various Porsches (944, 924, 928), Mercedes Benz (the 16V Cosworth 190E), Volkswagen (early GTIs all the way up to the mk7 R), BTCC era Volvo (850R / T5 / T5R), plus S1/S2 Lotus Elise and Exige.</p>
 		
-		<h3>Sourcing &amp; Trade Broker</h3>
+		<h3  id="services-broker" class="services">Sourcing &amp; Trade Broker</h3>
 
 		<p>Looking for something? Perhaps we can help. For a flat 2~5% fee of the final purchase price we can source, inspect, appraise, transact, import, and register cars for members – advising or handling every step of the process.</p>
 
@@ -127,7 +141,7 @@
 		<p>We will chat cars all day long so feel free to <a href="#contact-show">email us</a>, ask us anything, or just say hello.</p>
 
 		<p class="center"><a href="mailto:info@cartelautomotive.com" class="button" title="Email us...">info@cartelautomotive.com</a>
-			<a title="Copy to Clipboard" onclick="myFunction('info@cartelautomotive.com')" class="button icon"></a></p>
+			<a title="Copy to Clipboard" onclick="copyFunction('info@cartelautomotive.com')" class="button icon"></a></p>
 		
 	</div>
 </div>
@@ -155,21 +169,21 @@
 			<p>Need the garage queen prepped for summer? Need to free up space at the home garage? Want your weekend thrasher revived for the next bout of abuse? We can help.</p>
 			
 			<p class="center"><a href="mailto:info@cartelautomotive.com" class="button" title="Email us...">info@cartelautomotive.com</a>
-				<a title="Copy to Clipboard" onclick="myFunction('info@cartelautomotive.com')" class="button icon"></a></p>
+				<a title="Copy to Clipboard" onclick="copyFunction('info@cartelautomotive.com')" class="button icon"></a></p>
 
 			<p>We are baffled by TikTok, detest FaceBook, and too lazy to run a YouTube channel... but we just about manage Instagram, feel free to connect:</p>
 
 			<p class="center"><a href="https://instagram.com/cartelautomotivo" class="button" title="Visit our Instagram page...">Instagram</a>
-				<a title="Copy to Clipboard" onclick="myFunction('http://instagram.com/cartelautomotivo')" class="button icon"></a></p>
+				<a title="Copy to Clipboard" onclick="copyFunction('http://instagram.com/cartelautomotivo')" class="button icon"></a></p>
+			<script>
+				// Copy Email, Link to Clipboard
+				function copyFunction(copyText) {
+					navigator.clipboard.writeText(copyText);
+					alert("Copied to clipboard:" + `\n\n` + copyText);
+				}
+			</script>	
 	</div>
 </div>
-
-<script>
-	function myFunction(copyText) {
-		navigator.clipboard.writeText(copyText);
-		alert("Copied to clipboard:" + `\n\n` + copyText);
-	}
-</script>
 
 <!-- SHOP CONTENT -->
 <div id="shop-show">
