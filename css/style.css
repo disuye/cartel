@@ -366,7 +366,7 @@ s {
     padding: 0; margin: 0;
     padding-top: 1.0rem;
 }
-#show-bg {
+.show-bg {
     display: block;
     position: relative;
     top:-2.0rem; left:-2.0rem;
@@ -379,27 +379,27 @@ s {
     box-shadow: inset 0px -3.0rem 3.0rem rgba(0,0,0,0.4);
     background-repeat: no-repeat;
 }
-#about-show #show-bg {
+#about-show .show-bg {
     background-image: url(../img/cars/e30/E30-320is-02.jpg);
     background-position: -1.0rem 67%;
 }
-#contact-show #show-bg {
+#contact-show .show-bg {
     background-image: url(../img/stills/mtech2.jpg);
     background-position: -1.0rem 7%;
 }
-#cartel500-show #show-bg {
+#cartel500-show .show-bg {
     background-image: url(../img/stills/road.jpg);
     background-position: 0% 50%;
 }   
-#shop-show #show-bg {
+#shop-show .show-bg {
     background-image: url(../img/stills/s14b20.jpg);
     background-position: 0% 8%;
 }
-#services-show #show-bg {
+#services-show .show-bg {
     background-image: url(../img/stills/m3tacho.jpg);
     background-position: -1.0rem 22%;
 }
-#show-bg::after {
+.show-bg::after {
     content: "";
     padding: 0; margin :0;
     background: url(../img/logos/cartel.png) no-repeat;
@@ -541,10 +541,10 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
         padding:0;
         border: 0;
     }
-    #show-bg {
+    .show-bg {
         min-height: calc(10rem);
     }
-    #show-bg::after {
+    .show-bg::after {
         background-size: 45%;
         transition: 0.2s all ease-in-out;
     }
