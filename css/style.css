@@ -56,11 +56,7 @@ body {
     -o-animation: var(--fade);
     -ms-animation: var(--fade);
 }
-#about-show, 
-#cartel500-show, 
-#shop-show,
-#contact-show,
-#services-show,
+*[id*='-show'],
 .show-text {
     min-width: 270px !important;
     min-height: 4.0rem;  
@@ -81,17 +77,17 @@ body {
     filter: grayscale(1.0);
 }
 body:has(*[id*='-show']:target) #bg {
-    opacity: 0.6;
-    -webkit-filter: grayscale(0.0);
-    filter: grayscale(0.0);
+    opacity: 0.8;
+    -webkit-filter: grayscale(0.0) blur(3px);
+    filter: grayscale(0.0) blur(3px);
     transition-property: filter, -webkit-filter, opacity;
     transition-duration: 0.3s;
     transition-timing-function:ease-in-out;
 }
 #bg {
-    opacity: 0.45;
-    -webkit-filter: grayscale(1.0);
-    filter: grayscale(1.0);
+    opacity: 0.5;
+    -webkit-filter: grayscale(1.0) blur(0px);
+    filter: grayscale(1.0) blur(0px);
     transition-property: filter, -webkit-filter, opacity;
     transition-duration: 1.0s;
     transition-timing-function: ease-in-out;
@@ -161,6 +157,7 @@ body:has(*[id*='-show']:target) #bg {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.2rem;
+    line-height: 1.2rem;
     font-style: normal;
     width: 75vw;
     max-width: 600px;
@@ -168,11 +165,7 @@ body:has(*[id*='-show']:target) #bg {
     word-spacing: -0.08rem;
     text-align: center;
 }
-#about-show, 
-#shop-show,
-#cartel500-show, 
-#contact-show,
-#services-show {
+*[id*='-show'] {
     display: block;
     visibility: hidden;
     opacity: 0.0;
@@ -192,11 +185,7 @@ body:has(*[id*='-show']:target) #bg {
     overflow-x: hidden;
     box-shadow: 0px 1vh 10vh 0px rgba(0,0,0,0.80);
 }    
-#about-show:target, 
-#shop-show:target,
-#cartel500-show:target, 
-#contact-show:target,
-#services-show:target,
+*[id*='-show']:target,
 *[id^='services']:target {
     visibility: visible;
     opacity: 1.0;
@@ -218,11 +207,7 @@ body:has(*[id*='-show']:target) #bg {
 #services-show::before {
     background-image: url(../img/figures/06.png);
 }
-#about-show::before,
-#shop-show::before,
-#cartel500-show::before,
-#contact-show::before,
-#services-show::before {
+*[id*='-show']::before {
     content: "";
     display: block;
     position: fixed;
@@ -561,10 +546,7 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
         background-size: 45%;
         transition: 0.2s all ease-in-out;
     }
-    #about-show, 
-    #shop-show,
-    #cartel500-show, 
-    #contact-show {
+    *[id*='-show'] {
         min-height: 200px;
     }
     h1 {
