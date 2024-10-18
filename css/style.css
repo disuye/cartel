@@ -249,7 +249,13 @@ s {
     transition: 0.2s all ease-in-out;
     text-align: left;
     line-height: calc(1.3rem + 0.5vw);
-}  
+}
+/* Safari font weight renders too thick, so... */
+_::-webkit-full-page-media, 
+_:future, 
+:root .show-text {
+    font-weight: 300 !important;
+}
 .show-text a {
     text-decoration: none;
     color: var(--primary);
