@@ -259,7 +259,7 @@ _:future,
 .show-text a {
     text-decoration: none;
     color: var(--primary);
-    border-bottom: 1px dotted var(--primary);
+    border-bottom: 1px solid var(--highlight);
 }
 .button {
     vertical-align: middle;
@@ -517,6 +517,10 @@ li:before {
 }
 li svg {
     vertical-align: top;
+}
+li a {
+    text-decoration: none;
+    border: 0 !important;
 }
 .footer {
     display: block;
