@@ -404,7 +404,7 @@ s {
     -o-filter: drop-shadow(0 -0.06rem 0.3rem rgba(0,0,0,1.0));
     -ms-filter: drop-shadow(0 -0.06rem 0.3rem rgba(0,0,0,1.0));
     filter: drop-shadow(0 -0.06rem 0.5rem rgba(0,0,0,1.0));
-    background-size: calc(25% - 4.0rem);
+    background-size: 250px;
     background-position: center;
     background-color: rgba(0,128,128,0.06);
     height: 100%;
