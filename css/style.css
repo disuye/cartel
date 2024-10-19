@@ -534,7 +534,7 @@ and (orientation: portrait)
 and */ (max-width: 500px) /*
 and (-webkit-min-device-pixel-ratio: 2) */ {
     .centerblock {
-        margin-top: -2.0rem; /* visually correct for .message  on mobile */
+        margin-top: -2.0rem; /* visually correct for .message on mobile */
         transition: 0.2s all ease-in-out;
     }
     .show-text {
@@ -587,7 +587,7 @@ and (-webkit-min-device-pixel-ratio: 2) */ {
         position: fixed;
         top: calc(-10.0rem - 1px); 
         /* ^^ 1px iOS render glitch */
-        /* -N.Nrem = */
+        /* -N.Nrem = height of nav menu items */
         right: 0;
         width: 100vw;
         transition: 0.3s all ease-in-out;
