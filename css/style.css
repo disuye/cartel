@@ -259,6 +259,9 @@ _:future,
 .show-text a {
     text-decoration: none;
     color: var(--primary);
+    border-bottom: 1px solid var(--base);
+}
+.show-text a:hover {
     border-bottom: 1px solid var(--highlight);
 }
 .button {
@@ -275,16 +278,6 @@ _:future,
 }
 .button:hover {
     box-shadow: inset 0px -0.5rem 0.8rem rgba(0,0,0,0.1);
-}
-.icon {
-    padding: 0.4rem 0.5rem;
-}
-.icon:after {
-/*  content: "\0029C9";
-    https://yoksel.github.io/url-encoder/
-    https://fonts.google.com/icons 
-*/
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='22px' viewBox='0 -960 960 960' width='22px' fill='%23788388'%3E%3Cpath d='M280-240v-640h520v640H280Zm80-80h360v-480H360v480ZM120-80v-640h80v560h440v80H120Zm240-240v-480 480Z'/%3E%3C/svg%3E");
 }
 .show-text::after {
     content: "";
@@ -438,6 +431,9 @@ _:future,
 }
 .close:hover {
     background: rgba(0, 0, 0, 0.12);
+}
+.copyclipboard {
+    padding: 0.4rem 0.5rem;
 }
 h5, h3, h1 {
     font-family: var(--font-one);
