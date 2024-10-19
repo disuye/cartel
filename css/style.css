@@ -432,7 +432,7 @@ _:future,
 .close:hover {
     background: rgba(0, 0, 0, 0.12);
 }
-.copyclipboard {
+.copy-icon {
     padding: 0.4rem 0.5rem;
 }
 h5, h3, h1 {
