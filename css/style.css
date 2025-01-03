@@ -255,6 +255,19 @@ s {
     text-align: left;
     line-height: calc(1.3rem + 0.5vw);
 }
+
+/* COMING SOON */
+
+.soon::before {
+    content: "Coming soon..." !important;
+}
+
+.soon * {
+    display: none !important;
+}
+
+/* COMING SOON END */
+
 /* Safari font weight renders too thick, so... */
 _::-webkit-full-page-media, 
 _:future, 
