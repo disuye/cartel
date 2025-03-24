@@ -158,8 +158,8 @@ body:has(*[id*='-show']:target) #bg {
     max-width: 300px !important;
 }
 .message {
-    display: none;
-    font-family: var(--font-four);
+    display: block;
+    font-family: var(--font-three);
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.2rem;
@@ -254,9 +254,10 @@ s {
     transition: 0.2s all ease-in-out;
     text-align: left;
     line-height: calc(1.3rem + 0.5vw);
+    min-height: 1.0rem;
 }
 
-/* COMING SOON */
+/* COMING SOON
 
 .soon::before {
     content: "Coming soon..." !important;
@@ -266,7 +267,7 @@ s {
     display: none !important;
 }
 
-/* COMING SOON END */
+COMING SOON END */
 
 /* Safari font weight renders too thick, so... */
 _::-webkit-full-page-media, 
