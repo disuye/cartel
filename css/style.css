@@ -117,6 +117,13 @@ body:has(*[id*='-show']:target) #bg {
     z-index: 9998;
     text-align: center;
 }
+a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+a:hover {
+    background-color: var(--primary);
+}
 #menu a, 
 #menu a:active {
     display: inline-block;
