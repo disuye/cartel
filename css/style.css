@@ -211,6 +211,9 @@ a:hover {
 #cartel500-show:before {
     background-image: url(../img/figures/08.png);
 }
+#rtfm-show:before {
+    background-image: url(../img/figures/01.png);
+}
 #contact-show:before {
     background-image: url(../img/figures/07.png);
 }
@@ -235,6 +238,36 @@ p {
     padding-bottom: 0.1rem; /* hack, a{border} not rendering properly */
     margin: 0;
     margin-bottom: 1.5rem;
+}
+.iframe {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.i16x9 {    
+    padding-top: 56.25%;
+}
+.i4x3 {    
+    padding-top: 75%;
+}
+.i3x2 {    
+    padding-top: 66.66%;
+}
+.i8x5 {    
+    padding-top: 62.5%;
+}
+.i1x1 {    
+    padding-top: 100%;
+}
+.iframe-responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 .center {
     height: fit-content;
@@ -411,6 +444,10 @@ _:future,
 #cartel500-show .show-bg {
     background-image: url(../img/stills/road.jpg);
     background-position: 0% 50%;
+}
+#rtfm-show .show-bg {
+    background-image: url(../img/stills/s14bay.jpg);
+    background-position: 0% 40%;
 }   
 #shop-show .show-bg {
     background-image: url(../img/stills/s14b20.jpg);
